@@ -1,0 +1,169 @@
+{
+  "basic": [
+    [
+      { "character": "あ", "romaji": "a", "stroke_count": 3 },
+      { "character": "い", "romaji": "i", "stroke_count": 2 },
+      { "character": "う", "romaji": "u", "stroke_count": 2 },
+      { "character": "え", "romaji": "e", "stroke_count": 2 },
+      { "character": "お", "romaji": "o", "stroke_count": 3 }
+    ],
+    [
+      { "character": "か", "romaji": "ka", "stroke_count": 3 },
+      { "character": "き", "romaji": "ki", "stroke_count": 4 },
+      { "character": "く", "romaji": "ku", "stroke_count": 1 },
+      { "character": "け", "romaji": "ke", "stroke_count": 3 },
+      { "character": "こ", "romaji": "ko", "stroke_count": 2 }
+    ],
+    [
+      { "character": "さ", "romaji": "sa", "stroke_count": 3 },
+      { "character": "し", "romaji": "shi", "stroke_count": 1 },
+      { "character": "す", "romaji": "su", "stroke_count": 2 },
+      { "character": "せ", "romaji": "se", "stroke_count": 3 },
+      { "character": "そ", "romaji": "so", "stroke_count": 1 }
+    ],
+    [
+      { "character": "た", "romaji": "ta", "stroke_count": 4 },
+      { "character": "ち", "romaji": "chi", "stroke_count": 2 },
+      { "character": "つ", "romaji": "tsu", "stroke_count": 1 },
+      { "character": "て", "romaji": "te", "stroke_count": 1 },
+      { "character": "と", "romaji": "to", "stroke_count": 2 }
+    ],
+    [
+      { "character": "な", "romaji": "na", "stroke_count": 4 },
+      { "character": "に", "romaji": "ni", "stroke_count": 3 },
+      { "character": "ぬ", "romaji": "nu", "stroke_count": 2 },
+      { "character": "ね", "romaji": "ne", "stroke_count": 4 },
+      { "character": "の", "romaji": "no", "stroke_count": 1 }
+    ],
+    [
+      { "character": "は", "romaji": "ha", "stroke_count": 3 },
+      { "character": "ひ", "romaji": "hi", "stroke_count": 2 },
+      { "character": "ふ", "romaji": "fu", "stroke_count": 4 },
+      { "character": "へ", "romaji": "he", "stroke_count": 1 },
+      { "character": "ほ", "romaji": "ho", "stroke_count": 4 }
+    ],
+    [
+      { "character": "ま", "romaji": "ma", "stroke_count": 3 },
+      { "character": "み", "romaji": "mi", "stroke_count": 2 },
+      { "character": "む", "romaji": "mu", "stroke_count": 3 },
+      { "character": "め", "romaji": "me", "stroke_count": 2 },
+      { "character": "も", "romaji": "mo", "stroke_count": 3 }
+    ],
+    [
+      { "character": "や", "romaji": "ya", "stroke_count": 3 },
+      { "character": "ゆ", "romaji": "yu", "stroke_count": 2 },
+      { "character": "よ", "romaji": "yo", "stroke_count": 2 }
+    ],
+    [
+      { "character": "ら", "romaji": "ra", "stroke_count": 2 },
+      { "character": "り", "romaji": "ri", "stroke_count": 2 },
+      { "character": "る", "romaji": "ru", "stroke_count": 1 },
+      { "character": "れ", "romaji": "re", "stroke_count": 2 },
+      { "character": "ろ", "romaji": "ro", "stroke_count": 1 }
+    ],
+    [
+      { "character": "わ", "romaji": "wa", "stroke_count": 2 },
+      { "character": "を", "romaji": "wo", "stroke_count": 3 },
+      { "character": "ん", "romaji": "n", "stroke_count": 1 }
+    ]
+  ],
+
+  "dakuten": [
+    [
+      { "character": "が", "romaji": "ga", "stroke_count": 5 },
+      { "character": "ぎ", "romaji": "gi", "stroke_count": 6 },
+      { "character": "ぐ", "romaji": "gu", "stroke_count": 3 },
+      { "character": "げ", "romaji": "ge", "stroke_count": 5 },
+      { "character": "ご", "romaji": "go", "stroke_count": 4 }
+    ],
+    [
+      { "character": "ざ", "romaji": "za", "stroke_count": 5 },
+      { "character": "じ", "romaji": "ji", "stroke_count": 3 },
+      { "character": "ず", "romaji": "zu", "stroke_count": 4 },
+      { "character": "ぜ", "romaji": "ze", "stroke_count": 5 },
+      { "character": "ぞ", "romaji": "zo", "stroke_count": 3 }
+    ],
+    [
+      { "character": "だ", "romaji": "da", "stroke_count": 6 },
+      { "character": "ぢ", "romaji": "ji", "stroke_count": 4 },
+      { "character": "づ", "romaji": "zu", "stroke_count": 3 },
+      { "character": "で", "romaji": "de", "stroke_count": 3 },
+      { "character": "ど", "romaji": "do", "stroke_count": 4 }
+    ],
+    [
+      { "character": "ば", "romaji": "ba", "stroke_count": 5 },
+      { "character": "び", "romaji": "bi", "stroke_count": 4 },
+      { "character": "ぶ", "romaji": "bu", "stroke_count": 6 },
+      { "character": "べ", "romaji": "be", "stroke_count": 3 },
+      { "character": "ぼ", "romaji": "bo", "stroke_count": 6 }
+    ]
+  ],
+
+  "handakuten": [
+    [
+      { "character": "ぱ", "romaji": "pa", "stroke_count": 4 },
+      { "character": "ぴ", "romaji": "pi", "stroke_count": 3 },
+      { "character": "ぷ", "romaji": "pu", "stroke_count": 5 },
+      { "character": "ぺ", "romaji": "pe", "stroke_count": 2 },
+      { "character": "ぽ", "romaji": "po", "stroke_count": 5 }
+    ]
+  ],
+
+  "yoon": [
+    [
+      { "character": "きゃ", "romaji": "kya" },
+      { "character": "きゅ", "romaji": "kyu" },
+      { "character": "きょ", "romaji": "kyo" }
+    ],
+    [
+      { "character": "しゃ", "romaji": "sha" },
+      { "character": "しゅ", "romaji": "shu" },
+      { "character": "しょ", "romaji": "sho" }
+    ],
+    [
+      { "character": "ちゃ", "romaji": "cha" },
+      { "character": "ちゅ", "romaji": "chu" },
+      { "character": "ちょ", "romaji": "cho" }
+    ],
+    [
+      { "character": "にゃ", "romaji": "nya" },
+      { "character": "にゅ", "romaji": "nyu" },
+      { "character": "にょ", "romaji": "nyo" }
+    ],
+    [
+      { "character": "ひゃ", "romaji": "hya" },
+      { "character": "ひゅ", "romaji": "hyu" },
+      { "character": "ひょ", "romaji": "hyo" }
+    ],
+    [
+      { "character": "みゃ", "romaji": "mya" },
+      { "character": "みゅ", "romaji": "myu" },
+      { "character": "みょ", "romaji": "myo" }
+    ],
+    [
+      { "character": "りゃ", "romaji": "rya" },
+      { "character": "りゅ", "romaji": "ryu" },
+      { "character": "りょ", "romaji": "ryo" }
+    ],
+    [
+      { "character": "ぎゃ", "romaji": "gya" },
+      { "character": "ぎゅ", "romaji": "gyu" },
+      { "character": "ぎょ", "romaji": "gyo" }
+    ],
+    [
+      { "character": "じゃ", "romaji": "ja" },
+      { "character": "じゅ", "romaji": "ju" },
+      { "character": "じょ", "romaji": "jo" }
+    ],
+    [
+      { "character": "びゃ", "romaji": "bya" },
+      { "character": "びゅ", "romaji": "byu" },
+      { "character": "びょ", "romaji": "byo" }
+    ],
+    [
+      { "character": "ぴゃ", "romaji": "pya" },
+      { "character": "ぴゅ", "romaji": "pyu" },
+      { "character": "ぴょ", "romaji": "pyo" }
+    ]
+  ]
+}

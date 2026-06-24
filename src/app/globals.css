@@ -1,26 +1,40 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-sans: var(--font-noto-sans-jp), sans-serif;
+  --font-serif: var(--font-shippori-mincho), serif;
+
+  --color-paper: #FFFDF7;
+  --color-charcoal: #2B2B2B;
+  --color-navy: #334E68;
+  --color-sakura: #E8B4BC;
+  --color-muted-gold: #C9A86A;
+
+  --background: var(--color-paper);
+  --foreground: var(--color-charcoal);
+  
+  --animate-typing: typing 1.5s steps(10, end) infinite;
+  --animate-progress: progress 1.5s linear infinite;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@keyframes typing {
+  0% { width: 0; }
+  50% { width: 10ch; }
+  100% { width: 10ch; }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes progress {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
