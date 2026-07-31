@@ -2,6 +2,7 @@ export type HiraganaCharacter = {
     character: string;
     romaji: string;
     stroke_count?: number;
+    svgPath: string;
 };
 
 export type HiraganaType = 'basic' | 'dakuten' | 'handakuten' | 'yoon';

@@ -47,7 +47,8 @@ export function HiraganaGroup({group, groupIdx, type}: HiraganaGroupProps) {
                     svgChar={{
                         character: selectedCharacter.char.character,
                         romaji: selectedCharacter.char.romaji,
-                        type: type
+                        type: type,
+                        svgPath: selectedCharacter.char.svgPath
                     }}
                 />
             )}

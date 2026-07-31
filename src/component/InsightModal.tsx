@@ -8,6 +8,7 @@ interface InsightModalProps {
     character: string;
     romaji: string;
     type: HiraganaType;
+    svgPath: string;
   };
   exampleWords: ExampleWord[];
 }
@@ -16,10 +17,7 @@ export const InsightModal: React.FC<InsightModalProps> = ({ isOpen, onClose, svg
   if (!isOpen) return null;
 
   const getSvgPath = () => {
-    if (svgChar.type === 'dakuten' && (svgChar.romaji === 'ji' || svgChar.romaji === 'zu')) {
-      return `/svg/hiragana-stroke-order/${svgChar.type}/${svgChar.romaji}_${svgChar.character}.svg`;
-    }
-    return `/svg/hiragana-stroke-order/${svgChar.type}/${svgChar.romaji}.svg`;
+    return svgChar.svgPath;
   };
 
   return (
