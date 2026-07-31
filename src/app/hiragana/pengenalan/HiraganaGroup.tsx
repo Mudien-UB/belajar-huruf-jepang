@@ -30,7 +30,7 @@ export function HiraganaGroup({group, groupIdx}: HiraganaGroupProps) {
                         onClick={() => handleCardClick(char)}
                         className="aspect-square flex flex-col items-center justify-center cursor-pointer border border-sakura/30 hover:border-sakura hover:shadow-lg hover:scale-105 transition-all duration-300"
                     >
-                        <span className="text-5xl font-serif">{char.character}</span>
+                        <span className="text-5xl font-serif text-nowrap">{char.character}</span>
                         <span className="text-xs font-medium text-navy/60 mt-2">{char.romaji}</span>
                     </Card>
                 ))}

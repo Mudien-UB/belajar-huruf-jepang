@@ -77,36 +77,45 @@ export async function getWordsByLevel(level: number): Promise<ExampleWord[]> {
 
   return filteredWords;
 }
+function distributeItems<T>(items: T[], itemsPerSession: number): T[][] {
+    if (items.length === 0) return [];
 
-export async function getQuizCharacters(level: number, itemsPerSession: number = 5): Promise<HiraganaCharacter[][]> {
+    const sessions: T[][] = [];
+
+    // Create at most 3 sessions
+    for (let i = 0; i < 3; i++) {
+        const start = i * itemsPerSession;
+        const end = start + itemsPerSession;
+
+        // Only add if we have enough items for a full session
+        if (items.length >= end) {
+            sessions.push(items.slice(start, end));
+        } else {
+            break;
+        }
+    }
+
+    return sessions;
+}
+
+export async function getQuizCharacters(level: number, itemsPerSession: number = 6): Promise<HiraganaCharacter[][]> {
     const data = await getCharactersByLevel(level);
-    
-    // Shuffle and pick 15 items total (3 sessions * 5 items)
-    const totalItems = itemsPerSession * 3;
+
+    // Shuffle and pick enough items for 3 sessions of `itemsPerSession`
+    const maxTotalItems = itemsPerSession * 3;
     const shuffled = [...data].sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0, totalItems);
-    
-    // Distribute into 3 sessions
-    return [
-        selected.slice(0, itemsPerSession),
-        selected.slice(itemsPerSession, itemsPerSession * 2),
-        selected.slice(itemsPerSession * 2, itemsPerSession * 3),
-    ];
+    const selected = shuffled.slice(0, maxTotalItems);
+
+    return distributeItems(selected, itemsPerSession);
 }
 
-export async function getQuizWords(level: number, itemsPerSession: number = 5): Promise<ExampleWord[][]> {
+export async function getQuizWords(level: number, itemsPerSession: number = 6): Promise<ExampleWord[][]> {
     const data = await getWordsByLevel(level);
-    
-    // Shuffle and pick 15 items total (3 sessions * 5 items)
-    const totalItems = itemsPerSession * 3;
-    const shuffled = [...data].sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0, totalItems);
-    
-    // Distribute into 3 sessions
-    return [
-        selected.slice(0, itemsPerSession),
-        selected.slice(itemsPerSession, itemsPerSession * 2),
-        selected.slice(itemsPerSession * 2, itemsPerSession * 3),
-    ];
-}
 
+    // Shuffle and pick enough items for 3 sessions of `itemsPerSession`
+    const maxTotalItems = itemsPerSession * 3;
+    const shuffled = [...data].sort(() => 0.5 - Math.random());
+    const selected = shuffled.slice(0, maxTotalItems);
+
+    return distributeItems(selected, itemsPerSession);
+}

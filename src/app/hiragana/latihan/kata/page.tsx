@@ -60,13 +60,14 @@ export default function LatihanKataPage() {
                   </div>
               ))}
               <button onClick={() => startQuiz(level)} className="mt-8 px-6 py-2 bg-navy text-paper rounded-lg">Ulangi</button>
+              <button onClick={() => setLevel(null)} className="mt-8 px-6 py-2  text-navy border-navy border-2 rounded-lg hover:bg-navy/10">Ganti Level</button>
           </main>
       )
   }
 
   return (
     <main className="p-8 flex flex-col items-center">
-      <h1 className="text-3xl font-bold mb-6">Latihan Kata - Level {level} (Sesi {currentSession + 1}/3)</h1>
+      <h1 className="text-3xl font-bold mb-6">Latihan Kata - Level {level} (Sesi {currentSession + 1}/ {sessions.length})</h1>
       <button onClick={() => setLevel(null)} className="mb-4 text-navy underline">Ganti Level</button>
       
       <h2 className="text-xl font-bold mb-4">Sesi {currentSession + 1}</h2>
