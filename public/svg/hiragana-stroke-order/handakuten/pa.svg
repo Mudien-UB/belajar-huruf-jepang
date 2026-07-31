@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 109" width="320" height="320">
+<style>
+.grid { stroke: #e0e0e0; stroke-width: 0.5; }
+.stroke {
+  fill: none;
+  stroke: #1a1a2e;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation-name: draw;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.arrow {
+  opacity: 0;
+  animation-name: showArrow;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showArrow { to { opacity: 1; } }
+.num {
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  fill: #1d7bd8;
+  font-weight: bold;
+  opacity: 0;
+  animation-name: showNum;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showNum { to { opacity: 1; } }
+</style>
+<rect x="0" y="0" width="109" height="109" fill="#ffffff" stroke="#f0f0f0"/>
+<line x1="54.5" y1="0" x2="54.5" y2="109" class="grid"/>
+<line x1="0" y1="54.5" x2="109" y2="54.5" class="grid"/>
+<g>
+<path d="M 24.51,18.0 C 25.76,19.5 26.66,22.0 26.130000000000003,24.62 C 22.630000000000003,42.24 19.150000000000002,61.019999999999996 22.130000000000003,79.50000000000001 M 22.130000000000003,79.5 C 24.630000000000003,95.0 23.250000000000004,81.5 27.750000000000004,73.25" class="stroke" style="stroke-dasharray:83.8;stroke-dashoffset:83.8;animation-duration:0.93s;animation-delay:0.00s"/><path d="M 49.64,37.89 C 52.05,39.46 54.49,40.05 57.44,39.6 C 66.8,38.17 74.9,36.660000000000004 80.84,35.03 C 83.96000000000001,34.17 86.8,33.74 88.64,33.74" class="stroke" style="stroke-dasharray:40.0;stroke-dashoffset:40.0;animation-duration:0.44s;animation-delay:0.93s"/><path d="M 69.77,16.5 C 72.02,18.62 72.64999999999999,20.62 72.64999999999999,23.0 C 72.64999999999999,25.38 74.14999999999999,61.62 74.14999999999999,71.00000000000003 M 74.14999999999999,71.0 C 74.14999999999999,93.5 43.52999999999999,90.62 43.52999999999999,81.5 C 43.52999999999999,71.75 67.40999999999998,75.88 73.02999999999999,78.62 C 78.64999999999999,81.36 85.00999999999999,86.88000000000001 86.38999999999999,88.0" class="stroke" style="stroke-dasharray:148.4;stroke-dashoffset:148.4;animation-duration:1.10s;animation-delay:1.37s"/><path d="M 91.01,24.38 C 81.39,24.38 81.76,10.129999999999999 91.01,10.129999999999999 C 100.77000000000001,10.12 100.51,24.38 91.01,24.380000000000003" class="stroke" style="stroke-dasharray:45.3;stroke-dashoffset:45.3;animation-duration:0.50s;animation-delay:2.47s"/><g class="arrow" style="animation-delay:0.88s" transform="translate(27.8,73.2) rotate(-72.5)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.32s" transform="translate(88.6,33.7) rotate(-5.4)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:2.42s" transform="translate(86.4,88.0) rotate(36.0)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:2.92s" transform="translate(91.0,24.4) rotate(162.2)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><text x="16.9" y="17.6" class="num" style="animation-delay:0.00s">1</text><text x="43.0" y="36.4" class="num" style="animation-delay:0.93s">2</text><text x="59.9" y="16.0" class="num" style="animation-delay:1.37s">3</text><text x="88.0" y="31.8" class="num" style="animation-delay:2.47s">4</text>
+</g>
+</svg>

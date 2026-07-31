@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 109" width="320" height="232">
+<style>
+.grid { stroke: #e0e0e0; stroke-width: 0.5; }
+.stroke {
+  fill: none;
+  stroke: #1a1a2e;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation-name: draw;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.arrow {
+  opacity: 0;
+  animation-name: showArrow;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showArrow { to { opacity: 1; } }
+.num {
+  font-family: Arial, sans-serif;
+  fill: #1d7bd8;
+  font-weight: bold;
+  opacity: 0;
+  animation-name: showNum;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showNum { to { opacity: 1; } }
+</style>
+<rect x="0" y="0" width="150" height="109" fill="#ffffff" stroke="#f0f0f0"/>
+<line x1="75.0" y1="0" x2="75.0" y2="109" class="grid"/>
+<line x1="0" y1="54.5" x2="150" y2="54.5" class="grid"/>
+<g>
+<path d="M 30.5,30.5 C 32.38,31.25 35.14,31.56 36.38,31.38 C 43.13,30.38 58.63,26.88 62.88000000000001,25.38 M 62.88,25.38 C 65.05,24.619999999999997 66.38,24.13 67.75999999999998,23.259999999999998" class="stroke" style="stroke-width:3;stroke-dasharray:38.5;stroke-dashoffset:38.5;animation-duration:0.43s;animation-delay:0.00s"/><path d="M 36.25,48.95 C 38.26,49.800000000000004 41.22,50.150000000000006 42.54,49.940000000000005 C 49.769999999999996,48.81 66.36,44.85000000000001 70.91,43.150000000000006 C 73.22999999999999,42.290000000000006 74.66,41.74000000000001 76.13,40.75000000000001" class="stroke" style="stroke-width:3;stroke-dasharray:41.4;stroke-dashoffset:41.4;animation-duration:0.46s;animation-delay:0.43s"/><path d="M 42.0,14.38 C 43.5,15.260000000000002 45.13,17.32 46.0,19.500000000000007 M 46.0,19.5 C 51.5,33.25 62.0,48.75 72.38,60.25 C 80.02,68.72 81.5,69.63 66.38,64.13" class="stroke" style="stroke-width:3;stroke-dasharray:76.7;stroke-dashoffset:76.7;animation-duration:0.85s;animation-delay:0.89s"/><path d="M 33.75,83.5 C 44.37,93.25 61.0,92.12 71.87,88.5" class="stroke" style="stroke-width:3;stroke-dasharray:40.2;stroke-dashoffset:40.2;animation-duration:0.45s;animation-delay:1.74s"/><path d="M 77.37,19.0 C 80.12,20.75 83.37,24.38 85.12,27.5" class="stroke" style="stroke-width:3;stroke-dasharray:11.6;stroke-dashoffset:11.6;animation-duration:0.35s;animation-delay:2.19s"/><path d="M 83.75,14.12 C 86.81,15.69 90.43,18.939999999999998 92.37,21.740000000000002" class="stroke" style="stroke-width:3;stroke-dasharray:11.6;stroke-dashoffset:11.6;animation-duration:0.35s;animation-delay:2.54s"/><path d="M 96.046,79.774 C 97.014,80.612 98.750,81.061 100.492,80.222 C 110.034,75.653 118.925,70.238 126.700,70.303 C 131.353,70.375 134.954,72.435 134.909,76.641 C 134.909,80.937 129.299,85.188 122.279,85.832" class="stroke" style="stroke-width:3.00;stroke-dasharray:61.50;stroke-dashoffset:61.50;animation-duration:0.68s;animation-delay:2.89s"/><path d="M 111.060,62.503 C 113.706,62.952 116.423,64.590 116.989,65.916 C 118.087,68.496 116.475,67.138 115.506,67.268" class="stroke" style="stroke-width:3.00;stroke-dasharray:10.40;stroke-dashoffset:10.40;animation-duration:0.35s;animation-delay:3.57s"/><path d="M 102.396,66.722 C 103.618,67.690 103.923,68.522 104.229,69.757 C 105.581,75.172 109.962,90.798 111.834,96.661 C 112.166,97.714 112.803,99.885 113.316,101.497" class="stroke" style="stroke-width:3.00;stroke-dasharray:36.60;stroke-dashoffset:36.60;animation-duration:0.41s;animation-delay:3.92s"/><g class="arrow" style="animation-delay:0.38s" transform="translate(67.8,23.3) rotate(-25.3)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:0.84s" transform="translate(76.1,40.8) rotate(-26.6)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.69s" transform="translate(66.4,64.1) rotate(-161.9)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:2.14s" transform="translate(71.9,88.5) rotate(-16.3)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:2.49s" transform="translate(85.1,27.5) rotate(59.1)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:2.84s" transform="translate(92.4,21.7) rotate(53.5)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:3.52s" transform="translate(122.25,85.88) rotate(164.1) scale(1.000)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:3.87s" transform="translate(115.55,67.28) rotate(-171.6) scale(1.000)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:4.28s" transform="translate(113.35,101.48) rotate(73.0) scale(1.000)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><text x="24.5" y="29.5" class="num" style="font-size:9px;animation-delay:0.00s">1</text><text x="28.1" y="48.1" class="num" style="font-size:9px;animation-delay:0.43s">2</text><text x="32.5" y="13.0" class="num" style="font-size:9px;animation-delay:0.89s">3</text><text x="24.5" y="77.0" class="num" style="font-size:9px;animation-delay:1.74s">4</text><text x="69.8" y="18.0" class="num" style="font-size:9px;animation-delay:2.19s">5</text><text x="75.9" y="12.9" class="num" style="font-size:9px;animation-delay:2.54s">6</text><text x="93.35" y="77.18" class="num" style="font-size:9.00px;animation-delay:2.89s">7</text><text x="106.65" y="61.28" class="num" style="font-size:9.00px;animation-delay:3.57s">8</text><text x="96.75" y="66.48" class="num" style="font-size:9.00px;animation-delay:3.92s">9</text>
+</g>
+</svg>

@@ -3,21 +3,25 @@
 import {useState} from "react";
 import {Card} from "@/component/Card";
 import {InsightModal} from "@/component/InsightModal";
-import {HiraganaCharacter, ExampleWord} from "@/type/hiragana";
+import {HiraganaCharacter, ExampleWord, HiraganaType} from "@/type/hiragana";
 import {getExampleWords} from "@/lib/hiragana";
 
 interface HiraganaGroupProps {
     group: HiraganaCharacter[];
     groupIdx: number;
+    type: HiraganaType;
 }
 
-export function HiraganaGroup({group, groupIdx}: HiraganaGroupProps) {
-    const [selectedWords, setSelectedWords] = useState<ExampleWord[] | null>(null);
+export function HiraganaGroup({group, groupIdx, type}: HiraganaGroupProps) {
+    const [selectedCharacter, setSelectedCharacter] = useState<{
+        data: ExampleWord[];
+        char: HiraganaCharacter;
+    } | null>(null);
 
     const handleCardClick = async (char: HiraganaCharacter) => {
         const examples = await getExampleWords(char.character);
         if (Array.isArray(examples) && examples.length > 0) {
-            setSelectedWords(examples);
+            setSelectedCharacter({data: examples, char});
         }
     };
 
@@ -35,11 +39,18 @@ export function HiraganaGroup({group, groupIdx}: HiraganaGroupProps) {
                     </Card>
                 ))}
             </div>
-            <InsightModal
-                isOpen={!!selectedWords}
-                onClose={() => setSelectedWords(null)}
-                data={selectedWords ?? []}
-            />
+            {selectedCharacter && (
+                <InsightModal
+                    isOpen={!!selectedCharacter}
+                    onClose={() => setSelectedCharacter(null)}
+                    exampleWords={selectedCharacter.data}
+                    svgChar={{
+                        character: selectedCharacter.char.character,
+                        romaji: selectedCharacter.char.romaji,
+                        type: type
+                    }}
+                />
+            )}
         </>
     );
 }

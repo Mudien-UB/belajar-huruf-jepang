@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 109" width="320" height="320">
+<style>
+.grid { stroke: #e0e0e0; stroke-width: 0.5; }
+.stroke {
+  fill: none;
+  stroke: #1a1a2e;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation-name: draw;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.arrow {
+  opacity: 0;
+  animation-name: showArrow;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showArrow { to { opacity: 1; } }
+.num {
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  fill: #1d7bd8;
+  font-weight: bold;
+  opacity: 0;
+  animation-name: showNum;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showNum { to { opacity: 1; } }
+</style>
+<rect x="0" y="0" width="109" height="109" fill="#ffffff" stroke="#f0f0f0"/>
+<line x1="54.5" y1="0" x2="54.5" y2="109" class="grid"/>
+<line x1="0" y1="54.5" x2="109" y2="54.5" class="grid"/>
+<g>
+<path d="M 24.51,18.75 C 25.76,20.25 26.66,22.75 26.130000000000003,25.37 C 22.630000000000003,43.0 19.150000000000002,62.769999999999996 22.130000000000003,81.25000000000001 M 22.130000000000003,81.25 C 24.630000000000003,96.75 23.250000000000004,83.25 27.750000000000004,75.0" class="stroke" style="stroke-dasharray:84.7;stroke-dashoffset:84.7;animation-duration:0.94s;animation-delay:0.00s"/><path d="M 53.08,21.13 C 54.98,22.41 56.9,22.89 59.22,22.529999999999998 C 66.58,21.36 72.95,20.13 77.63,18.799999999999997 C 80.08999999999999,18.099999999999998 82.32,17.749999999999996 83.75999999999999,17.749999999999996" class="stroke" style="stroke-dasharray:31.5;stroke-dashoffset:31.5;animation-duration:0.35s;animation-delay:0.94s"/><path d="M 53.83,44.3 C 56.04,45.739999999999995 58.29,46.279999999999994 60.989999999999995,45.87 C 69.58,44.559999999999995 76.77,43.43 82.22,41.93 C 85.09,41.14 87.94,40.75 89.63,40.75" class="stroke" style="stroke-dasharray:36.6;stroke-dashoffset:36.6;animation-duration:0.41s;animation-delay:1.29s"/><path d="M 72.51,23.0 C 73.89,24.62 74.13000000000001,27.12 74.13000000000001,29.5 C 74.13000000000001,31.88 76.13000000000001,64.62 76.13000000000001,73.99999999999999 M 76.13000000000001,74.0 C 76.13000000000001,91.5 46.250000000000014,91.12 46.250000000000014,82.0 C 46.250000000000014,72.25 67.63000000000001,74.12 75.75000000000001,79.12 C 81.08000000000001,82.4 87.75000000000001,87.37 89.13000000000001,88.5" class="stroke" style="stroke-dasharray:141.6;stroke-dashoffset:141.6;animation-duration:1.10s;animation-delay:1.70s"/><path d="M 87.51,26.0 C 90.26,27.75 93.51,31.38 95.26,34.5" class="stroke" style="stroke-dasharray:11.6;stroke-dashoffset:11.6;animation-duration:0.35s;animation-delay:2.80s"/><path d="M 93.88,21.12 C 96.94,22.69 100.56,25.94 102.5,28.740000000000002" class="stroke" style="stroke-dasharray:11.6;stroke-dashoffset:11.6;animation-duration:0.35s;animation-delay:3.15s"/><g class="arrow" style="animation-delay:0.89s" transform="translate(27.8,75.0) rotate(-72.6)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.24s" transform="translate(83.8,17.8) rotate(-5.6)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.65s" transform="translate(89.6,40.8) rotate(-5.0)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:2.75s" transform="translate(89.1,88.5) rotate(35.5)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:3.10s" transform="translate(95.3,34.5) rotate(59.1)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:3.45s" transform="translate(102.5,28.7) rotate(53.5)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><text x="17.1" y="18.1" class="num" style="animation-delay:0.00s">1</text><text x="46.4" y="20.5" class="num" style="animation-delay:0.94s">2</text><text x="45.5" y="46.0" class="num" style="animation-delay:1.29s">3</text><text x="66.1" y="29.4" class="num" style="animation-delay:1.70s">4</text><text x="79.9" y="27.0" class="num" style="animation-delay:2.80s">5</text><text x="86.0" y="21.4" class="num" style="animation-delay:3.15s">6</text>
+</g>
+</svg>

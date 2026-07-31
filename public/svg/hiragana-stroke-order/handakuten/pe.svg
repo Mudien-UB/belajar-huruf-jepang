@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 109" width="320" height="320">
+<style>
+.grid { stroke: #e0e0e0; stroke-width: 0.5; }
+.stroke {
+  fill: none;
+  stroke: #1a1a2e;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation-name: draw;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.arrow {
+  opacity: 0;
+  animation-name: showArrow;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showArrow { to { opacity: 1; } }
+.num {
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  fill: #1d7bd8;
+  font-weight: bold;
+  opacity: 0;
+  animation-name: showNum;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showNum { to { opacity: 1; } }
+</style>
+<rect x="0" y="0" width="109" height="109" fill="#ffffff" stroke="#f0f0f0"/>
+<line x1="54.5" y1="0" x2="54.5" y2="109" class="grid"/>
+<line x1="0" y1="54.5" x2="109" y2="54.5" class="grid"/>
+<g>
+<path d="M 15.0,48.75 C 17.25,50.37 19.67,50.71 22.0,48.37 C 25.62,44.75 29.46,41.83 33.25,37.87 C 38.75,32.12 41.730000000000004,33.12 46.37,36.989999999999995 C 58.489999999999995,47.10999999999999 76.75,62.11 79.75000000000003,64.37 M 79.75,64.36999999999999 C 82.75,66.63 92.13,74.74999999999999 93.63,75.99999999999999" class="stroke" style="stroke-dasharray:99.8;stroke-dashoffset:99.8;animation-duration:1.10s;animation-delay:0.00s"/><path d="M 73.63,36.75 C 64.00999999999999,36.75 64.38,22.5 73.63,22.5 C 83.38,22.5 83.13,36.75 73.63,36.75" class="stroke" style="stroke-dasharray:45.3;stroke-dashoffset:45.3;animation-duration:0.50s;animation-delay:1.10s"/><g class="arrow" style="animation-delay:1.05s" transform="translate(93.6,76.0) rotate(40.4)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.55s" transform="translate(73.6,36.8) rotate(162.2)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><text x="9.9" y="42.8" class="num" style="animation-delay:0.00s">1</text><text x="65.6" y="43.0" class="num" style="animation-delay:1.10s">2</text>
+</g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 109" width="320" height="232">
+<style>
+.grid { stroke: #e0e0e0; stroke-width: 0.5; }
+.stroke {
+  fill: none;
+  stroke: #1a1a2e;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation-name: draw;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.arrow {
+  opacity: 0;
+  animation-name: showArrow;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showArrow { to { opacity: 1; } }
+.num {
+  font-family: Arial, sans-serif;
+  fill: #1d7bd8;
+  font-weight: bold;
+  opacity: 0;
+  animation-name: showNum;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showNum { to { opacity: 1; } }
+</style>
+<rect x="0" y="0" width="150" height="109" fill="#ffffff" stroke="#f0f0f0"/>
+<line x1="75.0" y1="0" x2="75.0" y2="109" class="grid"/>
+<line x1="0" y1="54.5" x2="150" y2="54.5" class="grid"/>
+<g>
+<path d="M 24.5,32.62 C 25.88,33.239999999999995 28.38,34.129999999999995 30.88,33.739999999999995 C 37.379999999999995,32.739999999999995 49.129999999999995,29.619999999999994 57.75999999999999,27.739999999999995 M 57.76,27.739999999999995 C 60.4,27.169999999999995 63.14,26.239999999999995 65.38,25.359999999999996" class="stroke" style="stroke-width:3;stroke-dasharray:42.1;stroke-dashoffset:42.1;animation-duration:0.47s;animation-delay:0.00s"/><path d="M 45.62,15.62 C 46.37,16.869999999999997 46.33,19.199999999999996 46.0,20.86999999999999 M 46.0,20.869999999999997 C 43.0,35.87 41.75,43.459999999999994 37.62,59.489999999999995 C 34.37,72.11 32.239999999999995,70.61 41.239999999999995,63.87 C 49.529999999999994,57.66 60.989999999999995,54.37 69.73999999999998,54.37 M 69.74,54.37 C 78.36,54.37 84.32,60.25 84.24,68.87 C 84.11999999999999,82.37 67.74,89.49000000000001 54.36,92.12" class="stroke" style="stroke-width:3;stroke-dasharray:157.4;stroke-dashoffset:157.4;animation-duration:1.10s;animation-delay:0.47s"/><path d="M 96.046,79.774 C 97.014,80.612 98.750,81.061 100.492,80.222 C 110.034,75.653 118.925,70.238 126.700,70.303 C 131.353,70.375 134.954,72.435 134.909,76.641 C 134.909,80.937 129.299,85.188 122.279,85.832" class="stroke" style="stroke-width:3.00;stroke-dasharray:61.50;stroke-dashoffset:61.50;animation-duration:0.68s;animation-delay:1.57s"/><path d="M 111.060,62.503 C 113.706,62.952 116.423,64.590 116.989,65.916 C 118.087,68.496 116.475,67.138 115.506,67.268" class="stroke" style="stroke-width:3.00;stroke-dasharray:10.40;stroke-dashoffset:10.40;animation-duration:0.35s;animation-delay:2.25s"/><path d="M 102.396,66.722 C 103.618,67.690 103.923,68.522 104.229,69.757 C 105.581,75.172 109.962,90.798 111.834,96.661 C 112.166,97.714 112.803,99.885 113.316,101.497" class="stroke" style="stroke-width:3.00;stroke-dasharray:36.60;stroke-dashoffset:36.60;animation-duration:0.41s;animation-delay:2.60s"/><g class="arrow" style="animation-delay:0.42s" transform="translate(65.4,25.4) rotate(-19.5)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.52s" transform="translate(54.4,92.1) rotate(161.8)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:2.20s" transform="translate(122.25,85.88) rotate(164.1) scale(1.000)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:2.55s" transform="translate(115.55,67.28) rotate(-171.6) scale(1.000)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:2.96s" transform="translate(113.35,101.48) rotate(73.0) scale(1.000)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><text x="20.0" y="28.9" class="num" style="font-size:9px;animation-delay:0.00s">1</text><text x="36.8" y="15.5" class="num" style="font-size:9px;animation-delay:0.47s">2</text><text x="93.35" y="77.18" class="num" style="font-size:9.00px;animation-delay:1.57s">3</text><text x="106.65" y="61.28" class="num" style="font-size:9.00px;animation-delay:2.25s">4</text><text x="96.75" y="66.48" class="num" style="font-size:9.00px;animation-delay:2.60s">5</text>
+</g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 109" width="320" height="232">
+<style>
+.grid { stroke: #e0e0e0; stroke-width: 0.5; }
+.stroke {
+  fill: none;
+  stroke: #1a1a2e;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation-name: draw;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.arrow {
+  opacity: 0;
+  animation-name: showArrow;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showArrow { to { opacity: 1; } }
+.num {
+  font-family: Arial, sans-serif;
+  fill: #1d7bd8;
+  font-weight: bold;
+  opacity: 0;
+  animation-name: showNum;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showNum { to { opacity: 1; } }
+</style>
+<rect x="0" y="0" width="150" height="109" fill="#ffffff" stroke="#f0f0f0"/>
+<line x1="75.0" y1="0" x2="75.0" y2="109" class="grid"/>
+<line x1="0" y1="54.5" x2="150" y2="54.5" class="grid"/>
+<g>
+<path d="M 20.0,25.12 C 21.25,26.0 23.75,27.37 26.5,26.5 C 29.25,25.63 33.81,24.12 37.88,22.0 C 43.88,18.88 46.300000000000004,20.99 42.13,26.0 C 15.000000000000004,58.62 18.369999999999997,84.5 40.60999999999999,88.87999999999998 M 40.61,88.88 C 58.68,92.44 78.24000000000001,72.5 76.24000000000001,32.370000000000005 M 76.24000000000001,32.37 C 75.52000000000001,17.869999999999997 76.07000000000001,17.589999999999996 80.36000000000001,30.619999999999997 C 84.12000000000002,42.0 90.62000000000002,51.379999999999995 96.50000000000001,57.12" class="stroke" style="stroke-width:3;stroke-dasharray:237.5;stroke-dashoffset:237.5;animation-duration:1.10s;animation-delay:0.00s"/><path d="M 98.249,66.796 C 98.964,67.576 99.295,68.941 99.029,70.046 C 97.534,76.156 96.949,81.610 97.924,88.240 M 97.924,88.240 C 99.367,98.042 98.509,90.255 99.614,87.460 M 99.614,87.460 C 104.288,75.636 113.778,69.526 122.683,69.526 M 122.682,69.526 C 131.457,69.526 134.051,75.441 134.051,80.056 M 134.051,80.056 C 134.051,94.285 118.002,95.455 111.698,88.767" class="stroke" style="stroke-width:3.00;stroke-dasharray:111.90;stroke-dashoffset:111.90;animation-duration:1.10s;animation-delay:1.10s"/><path d="M 117.677,62.311 C 119.043,63.221 119.322,63.936 119.498,66.017 M 119.497,66.017 C 119.953,71.476 120.225,75.747 120.343,81.285 C 120.603,93.758 117.093,97.918 113.908,101.689" class="stroke" style="stroke-width:3.00;stroke-dasharray:41.60;stroke-dashoffset:41.60;animation-duration:0.46s;animation-delay:2.20s"/><g class="arrow" style="animation-delay:1.05s" transform="translate(96.5,57.1) rotate(55.1)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:2.15s" transform="translate(111.72,88.78) rotate(-157.4) scale(1.000)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:2.61s" transform="translate(113.92,101.68) rotate(129.1) scale(1.000)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><text x="15.2" y="21.4" class="num" style="font-size:9px;animation-delay:0.00s">1</text><text x="92.82" y="66.08" class="num" style="font-size:9.00px;animation-delay:1.10s">2</text><text x="111.92" y="61.38" class="num" style="font-size:9.00px;animation-delay:2.20s">3</text>
+</g>
+</svg>

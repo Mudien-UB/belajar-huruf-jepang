@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 109" width="320" height="320">
+<style>
+.grid { stroke: #e0e0e0; stroke-width: 0.5; }
+.stroke {
+  fill: none;
+  stroke: #1a1a2e;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation-name: draw;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.arrow {
+  opacity: 0;
+  animation-name: showArrow;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showArrow { to { opacity: 1; } }
+.num {
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  fill: #1d7bd8;
+  font-weight: bold;
+  opacity: 0;
+  animation-name: showNum;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showNum { to { opacity: 1; } }
+</style>
+<rect x="0" y="0" width="109" height="109" fill="#ffffff" stroke="#f0f0f0"/>
+<line x1="54.5" y1="0" x2="54.5" y2="109" class="grid"/>
+<line x1="0" y1="54.5" x2="109" y2="54.5" class="grid"/>
+<g>
+<path d="M42.63,15.62c3.62,3.38,7.5,5.38,12.74,6.13c9.59,1.37,3.5,3.38-1.88,6.12" class="stroke" style="stroke-dasharray:28.3;stroke-dashoffset:28.3;animation-duration:0.35s;animation-delay:0.00s"/><path d="M43.63,46.88c1.88,4.62,7.5,9.41,14.25,17.5c10.62,12.74,0.49,30-19.13,21.62" class="stroke" style="stroke-dasharray:65.8;stroke-dashoffset:65.8;animation-duration:0.73s;animation-delay:0.35s"/><path d="M16.5,73.38c0.75,4,1.88,8.12,5,10.12c1.16,0.74,0.12-3.38,13.25-9.12" class="stroke" style="stroke-dasharray:28.0;stroke-dashoffset:28.0;animation-duration:0.35s;animation-delay:1.08s"/><path d="M80.13,61.88c5.12,3.38,10.28,7.49,11.38,8.88c6.75,8.5-0.25,4.62-4.62,7.12" class="stroke" style="stroke-dasharray:28.3;stroke-dashoffset:28.3;animation-duration:0.35s;animation-delay:1.43s"/>
+<g class="arrow" style="animation-delay:0.30s" transform="translate(53.5,27.9) rotate(153.9)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.03s" transform="translate(38.7,86.0) rotate(-165.4)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.38s" transform="translate(34.8,74.4) rotate(-26.6)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.73s" transform="translate(86.9,77.9) rotate(162.7)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g>
+<text x="36.8" y="13.9" class="num" style="animation-delay:0.00s">1</text><text x="37.8" y="43.9" class="num" style="animation-delay:0.35s">2</text><text x="13.5" y="67.6" class="num" style="animation-delay:1.08s">3</text><text x="69.4" y="59.1" class="num" style="animation-delay:1.43s">4</text>
+</g>
+</svg>

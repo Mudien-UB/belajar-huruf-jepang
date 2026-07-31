@@ -67,6 +67,7 @@ export default async function PengenalanPage() {
                                 key={`${category}-${groupIdx}`}
                                 group={group}
                                 groupIdx={groupIdx}
+                                type={category}
                             />
                         ))}
                     </div>

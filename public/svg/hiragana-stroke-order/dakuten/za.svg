@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 109" width="320" height="320">
+<style>
+.grid { stroke: #e0e0e0; stroke-width: 0.5; }
+.stroke {
+  fill: none;
+  stroke: #1a1a2e;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation-name: draw;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.arrow {
+  opacity: 0;
+  animation-name: showArrow;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showArrow { to { opacity: 1; } }
+.num {
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  fill: #1d7bd8;
+  font-weight: bold;
+  opacity: 0;
+  animation-name: showNum;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showNum { to { opacity: 1; } }
+</style>
+<rect x="0" y="0" width="109" height="109" fill="#ffffff" stroke="#f0f0f0"/>
+<line x1="54.5" y1="0" x2="54.5" y2="109" class="grid"/>
+<line x1="0" y1="54.5" x2="109" y2="54.5" class="grid"/>
+<g>
+<path d="M 27.0,39.15 C 29.42,40.48 32.38,40.62 35.32,40.21 C 44.11,38.97 63.99,32.2 69.47,29.53 C 72.26,28.17 73.25,27.62 75.75,26.0" class="stroke" style="stroke-dasharray:51.6;stroke-dashoffset:51.6;animation-duration:0.57s;animation-delay:0.00s"/><path d="M 41.5,14.12 C 43.0,15.0 45.13,17.07 46.0,19.25 C 51.5,33.0 61.25,46.879999999999995 72.88,58.75 C 80.86,66.9 79.25999999999999,68.75 66.88,61.87" class="stroke" style="stroke-dasharray:75.6;stroke-dashoffset:75.6;animation-duration:0.84s;animation-delay:0.57s"/><path d="M 35.25,80.75 C 39.75,92.5 56.129999999999995,93.25 73.63,88.25" class="stroke" style="stroke-dasharray:42.8;stroke-dashoffset:42.8;animation-duration:0.48s;animation-delay:1.41s"/><path d="M 79.88,14.25 C 82.63,16.0 85.88,19.63 87.63,22.75" class="stroke" style="stroke-dasharray:11.6;stroke-dashoffset:11.6;animation-duration:0.35s;animation-delay:1.89s"/><path d="M 86.25,9.38 C 89.31,10.950000000000001 92.93,14.200000000000001 94.87,17.0" class="stroke" style="stroke-dasharray:11.6;stroke-dashoffset:11.6;animation-duration:0.35s;animation-delay:2.24s"/><g class="arrow" style="animation-delay:0.52s" transform="translate(75.7,26.0) rotate(-30.6)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.36s" transform="translate(66.9,61.9) rotate(-155.9)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.84s" transform="translate(73.6,88.2) rotate(-14.3)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:2.19s" transform="translate(87.6,22.7) rotate(59.1)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:2.54s" transform="translate(94.9,17.0) rotate(53.5)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><text x="21.2" y="38.8" class="num" style="animation-delay:0.00s">1</text><text x="32.0" y="13.2" class="num" style="animation-delay:0.57s">2</text><text x="28.2" y="77.2" class="num" style="animation-delay:1.41s">3</text><text x="72.2" y="13.2" class="num" style="animation-delay:1.89s">4</text><text x="78.4" y="8.1" class="num" style="animation-delay:2.24s">5</text>
+</g>
+</svg>

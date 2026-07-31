@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 109" width="320" height="320">
+<style>
+.grid { stroke: #e0e0e0; stroke-width: 0.5; }
+.stroke {
+  fill: none;
+  stroke: #1a1a2e;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation-name: draw;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.arrow {
+  opacity: 0;
+  animation-name: showArrow;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showArrow { to { opacity: 1; } }
+.num {
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  fill: #1d7bd8;
+  font-weight: bold;
+  opacity: 0;
+  animation-name: showNum;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showNum { to { opacity: 1; } }
+</style>
+<rect x="0" y="0" width="109" height="109" fill="#ffffff" stroke="#f0f0f0"/>
+<line x1="54.5" y1="0" x2="54.5" y2="109" class="grid"/>
+<line x1="0" y1="54.5" x2="109" y2="54.5" class="grid"/>
+<g>
+<path d="M 24.62,38.62 C 26.5,40.239999999999995 29.270000000000003,40.949999999999996 33.24000000000001,39.62 M 33.24,39.62 C 58.74,31.119999999999997 62.739999999999995,35.489999999999995 62.739999999999974,47.239999999999995 M 62.74,47.239999999999995 C 62.74,56.62 61.5,64.69999999999999 58.49,72.49000000000001 M 58.49,72.49 C 50.870000000000005,92.25 47.620000000000005,89.88 42.370000000000005,83.38" class="stroke" style="stroke-dasharray:100.3;stroke-dashoffset:100.3;animation-duration:1.10s;animation-delay:0.00s"/><path d="M 48.5,17.5 C 49.5,18.88 49.79,22.2 49.0,24.62 C 44.0,39.870000000000005 30.98,65.55 29.380000000000003,68.50000000000001 M 29.38,68.5 C 26.259999999999998,74.25 23.0,80.38 20.0,84.75" class="stroke" style="stroke-dasharray:74.2;stroke-dashoffset:74.2;animation-duration:0.82s;animation-delay:1.10s"/><path d="M 77.37,31.62 C 84.87,38.5 90.62,47.370000000000005 92.37,56.50000000000001" class="stroke" style="stroke-dasharray:29.5;stroke-dashoffset:29.5;animation-duration:0.35s;animation-delay:1.92s"/><path d="M 80.5,18.25 C 83.25,20.0 86.5,23.63 88.25,26.75" class="stroke" style="stroke-dasharray:11.6;stroke-dashoffset:11.6;animation-duration:0.35s;animation-delay:2.27s"/><path d="M 86.87,13.38 C 89.93,14.950000000000001 93.55000000000001,18.200000000000003 95.49000000000001,20.999999999999993" class="stroke" style="stroke-dasharray:11.6;stroke-dashoffset:11.6;animation-duration:0.35s;animation-delay:2.62s"/><g class="arrow" style="animation-delay:1.05s" transform="translate(42.4,83.4) rotate(-139.2)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.87s" transform="translate(20.0,84.8) rotate(121.9)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:2.22s" transform="translate(92.4,56.5) rotate(76.7)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:2.57s" transform="translate(88.2,26.7) rotate(59.1)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:2.92s" transform="translate(95.5,21.0) rotate(53.5)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><text x="16.8" y="37.4" class="num" style="animation-delay:0.00s">1</text><text x="39.8" y="16.0" class="num" style="animation-delay:1.10s">2</text><text x="70.0" y="29.8" class="num" style="animation-delay:1.92s">3</text><text x="72.9" y="17.2" class="num" style="animation-delay:2.27s">4</text><text x="79.0" y="12.1" class="num" style="animation-delay:2.62s">5</text>
+</g>
+</svg>
