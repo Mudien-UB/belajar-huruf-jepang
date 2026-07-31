@@ -33,26 +33,30 @@ export const InsightModal: React.FC<InsightModalProps> = ({ isOpen, onClose, svg
           </div>
           <div>
             <h2 className="text-2xl font-bold mb-4 text-navy">Contoh Kata</h2>
-            <table className="w-full text-left border-collapse">
-              <thead>
-                <tr>
-                  <th className="border-b-2 py-2">Kata</th>
-                  <th className="border-b-2 py-2">Romaji</th>
-                  <th className="border-b-2 py-2">Arti</th>
-                </tr>
-              </thead>
-              <tbody>
-                {exampleWords.slice(0, 5).map((item, idx) => (
-                  <tr key={idx} className="border-b">
-                    <td className="py-3 font-semibold text-navy">
-                      {item.word} {item.kanji && <span className="text-sm text-foreground/60">({item.kanji})</span>}
-                    </td>
-                    <td className="py-3">{item.romaji}</td>
-                    <td className="py-3">{item.meaning.id}</td>
+            {exampleWords.length > 0 ? (
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr>
+                    <th className="border-b-2 py-2">Kata</th>
+                    <th className="border-b-2 py-2">Romaji</th>
+                    <th className="border-b-2 py-2">Arti</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {exampleWords.slice(0, 5).map((item, idx) => (
+                    <tr key={idx} className="border-b">
+                      <td className="py-3 font-semibold text-navy">
+                        {item.word} {item.kanji && <span className="text-sm text-foreground/60">({item.kanji})</span>}
+                      </td>
+                      <td className="py-3">{item.romaji}</td>
+                      <td className="py-3">{item.meaning.id}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            ) : (
+              <p className="text-foreground/60 italic">Belum ada contoh kata tersedia.</p>
+            )}
           </div>
         </div>
         <button 

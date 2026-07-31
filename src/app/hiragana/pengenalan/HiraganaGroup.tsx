@@ -20,9 +20,7 @@ export function HiraganaGroup({group, groupIdx, type}: HiraganaGroupProps) {
 
     const handleCardClick = async (char: HiraganaCharacter) => {
         const examples = await getExampleWords(char.character);
-        if (Array.isArray(examples) && examples.length > 0) {
-            setSelectedCharacter({data: examples, char});
-        }
+        setSelectedCharacter({data: Array.isArray(examples) ? examples : [], char});
     };
 
     return (
