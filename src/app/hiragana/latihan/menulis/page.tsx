@@ -3,12 +3,14 @@ import { useState } from 'react';
 import { getQuizCharacters } from '@/lib/hiragana';
 import { HiraganaCharacter } from '@/type/hiragana';
 import { LevelSelector } from '@/components/molecules/LevelSelector';
+import { TutorialModal } from '@/components/organisms/TutorialModal';
 
 export default function LatihanMenulisHiragana() {
   const [level, setLevel] = useState<number | null>(null);
   const [sessions, setSessions] = useState<HiraganaCharacter[][]>([]);
   const [currentSession, setCurrentSession] = useState(0);
   const [quizCompleted, setQuizCompleted] = useState(false);
+  const [showTutorial, setShowTutorial] = useState(true);
 
   const startQuiz = async (selectedLevel: number) => {
     setLevel(selectedLevel);
@@ -25,6 +27,7 @@ export default function LatihanMenulisHiragana() {
   if (level === null) {
     return (
       <main className="p-8 flex flex-col items-center">
+        <TutorialModal isOpen={showTutorial} onClose={() => setShowTutorial(false)} />
         <h1 className="text-3xl font-bold mb-6">Pilih Level Latihan Huruf</h1>
         <LevelSelector currentLevel={0} onLevelChange={startQuiz} />
       </main>
@@ -65,8 +68,19 @@ export default function LatihanMenulisHiragana() {
   }
 
   return (
-    <main className="p-8 flex flex-col items-center">
+    <main className="p-8 flex flex-col items-center relative">
+      <TutorialModal isOpen={showTutorial} onClose={() => setShowTutorial(false)} />
       
+      <button 
+        onClick={() => setShowTutorial(true)}
+        className="absolute top-4 right-4 p-2 bg-navy text-paper rounded-full hover:bg-navy/90"
+        aria-label="Tutorial"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </button>
+
       <h1 className="text-3xl font-bold mb-6">Latihan Huruf - Level {level} (Sesi {currentSession + 1}/{sessions.length})</h1>
       <button onClick={() => setLevel(null)} className="mb-4 text-navy underline">Ganti Level</button>
       
