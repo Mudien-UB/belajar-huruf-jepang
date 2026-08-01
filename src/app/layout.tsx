@@ -3,6 +3,7 @@ import {Noto_Sans_JP, Shippori_Mincho} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/organisms/Navbar";
 import Footer from "@/components/organisms/Footer";
+import { AutoHintProvider } from "@/context/AutoHintContext";
 
 const notoSansJP = Noto_Sans_JP({
     variable: "--font-noto-sans-jp",
@@ -28,8 +29,6 @@ export const metadata: Metadata = {
         "Bahasa Jepang",
         "Hiragana",
     ]
-
-
 };
 
 export default function RootLayout({
@@ -43,9 +42,11 @@ export default function RootLayout({
             className={`${notoSansJP.variable} ${shipporiMincho.variable} h-full antialiased`}
         >
         <body className="min-h-screen flex flex-col bg-background text-foreground font-sans">
-        <Navbar/>
-        <main className="grow flex flex-col">{children}</main>
-        <Footer/>
+        <AutoHintProvider>
+            <Navbar/>
+            <main className="grow flex flex-col">{children}</main>
+            <Footer/>
+        </AutoHintProvider>
         </body>
         </html>
     );

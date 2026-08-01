@@ -5,6 +5,7 @@ import { LevelSelector } from '@/components/molecules/LevelSelector';
 import { CharSizeSelector } from '@/components/molecules/CharSizeSelector';
 import { QuizSessionSelector } from '@/components/molecules/QuizSessionSelector';
 import { SambungCocokTutorialModal } from '@/components/organisms/SambungCocokTutorialModal';
+import { useAutoHint } from '@/context/AutoHintContext';
 import type {SambungCocokQuiz} from "@/type/hiragana";
 
 type Selection = { item: SambungCocokQuiz; isHiragana: boolean };
@@ -21,7 +22,14 @@ export default function LatihanSambungCocok() {
     const [selected, setSelected] = useState<Selection | null>(null);
     const [matches, setMatches] = useState<Record<string, string>>({}); // hiragana: romaji
     const [error, setError] = useState<string | null>(null);
-    const [isTutorialOpen, setIsTutorialOpen] = useState(true);
+    
+    const { hasBeenShown, setHasBeenShown } = useAutoHint();
+    const [isTutorialOpen, setIsTutorialOpen] = useState(() => !hasBeenShown['sambung-cocok']);
+
+    const handleCloseTutorial = () => {
+        setIsTutorialOpen(false);
+        setHasBeenShown('sambung-cocok', true);
+    };
 
     const startQuiz = async (selectedLevel: number, selectedSize: number, selectedSessionCount: number) => {
         const newSessions = [];
@@ -118,7 +126,7 @@ export default function LatihanSambungCocok() {
                 >
                     Mulai Latihan
                 </button>
-                <SambungCocokTutorialModal isOpen={isTutorialOpen} onClose={() => setIsTutorialOpen(false)} />
+                <SambungCocokTutorialModal isOpen={isTutorialOpen} onClose={handleCloseTutorial} />
             </main>
         );
     }
