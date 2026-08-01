@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 109" width="320" height="320">
+<style>
+.grid { stroke: #e0e0e0; stroke-width: 0.5; }
+.stroke {
+  fill: none;
+  stroke: #1a1a2e;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation-name: draw;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.arrow {
+  opacity: 0;
+  animation-name: showArrow;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showArrow { to { opacity: 1; } }
+.num {
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  fill: #1d7bd8;
+  font-weight: bold;
+  opacity: 0;
+  animation-name: showNum;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showNum { to { opacity: 1; } }
+</style>
+<rect x="0" y="0" width="109" height="109" fill="#ffffff" stroke="#f0f0f0"/>
+<line x1="54.5" y1="0" x2="54.5" y2="109" class="grid"/>
+<line x1="0" y1="54.5" x2="109" y2="54.5" class="grid"/>
+<g>
+<path d="M38.4,22c1.88,1.25,4.98,1.05,7.5,0.38c6.5-1.75,13.25-3.75,19.38-5.38c4.63-1.23,7.18,2.06,3.62,5.25c-12.12,10.87-31.14,24.4-40,30.25c-6.25,4.12-5.88,5.75,1.38,3.88c17.08-4.42,35.96-8.68,50.12-10.38c9.38-1.12,9.62,0.12,0.5,1.38c-15.82,2.17-34.38,14.25-34.38,26.5c0,12.88,11.62,20.38,31.5,16.62" class="stroke" style="stroke-dasharray:253.6;stroke-dashoffset:253.6;animation-duration:1.10s;animation-delay:0.00s"/>
+<g class="arrow" style="animation-delay:1.05s" transform="translate(78.0,90.5) rotate(9.5)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g>
+<text x="31.9" y="20.5" class="num" style="animation-delay:0.00s">1</text>
+</g>
+</svg>

@@ -2,6 +2,7 @@ export type HiraganaCharacter = {
     character: string;
     romaji: string;
     stroke_count?: number;
+    svgPath: string;
 };
 
 export type HiraganaType = 'basic' | 'dakuten' | 'handakuten' | 'yoon';
@@ -22,3 +23,8 @@ export type ExampleWord = {
 export type ExampleWordsData = {
     [char: string]: ExampleWord[];
 };
+
+export type SambungCocokQuiz = {
+    word: string;
+    romaji: string;
+}

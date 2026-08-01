@@ -1,169 +1,169 @@
 {
   "basic": [
     [
-      { "character": "あ", "romaji": "a", "stroke_count": 3 },
-      { "character": "い", "romaji": "i", "stroke_count": 2 },
-      { "character": "う", "romaji": "u", "stroke_count": 2 },
-      { "character": "え", "romaji": "e", "stroke_count": 2 },
-      { "character": "お", "romaji": "o", "stroke_count": 3 }
+      { "character": "あ", "romaji": "a", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/basic/a.svg" },
+      { "character": "い", "romaji": "i", "stroke_count": 2, "svgPath": "/svg/hiragana-stroke-order/basic/i.svg" },
+      { "character": "う", "romaji": "u", "stroke_count": 2, "svgPath": "/svg/hiragana-stroke-order/basic/u.svg" },
+      { "character": "え", "romaji": "e", "stroke_count": 2, "svgPath": "/svg/hiragana-stroke-order/basic/e.svg" },
+      { "character": "お", "romaji": "o", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/basic/o.svg" }
     ],
     [
-      { "character": "か", "romaji": "ka", "stroke_count": 3 },
-      { "character": "き", "romaji": "ki", "stroke_count": 4 },
-      { "character": "く", "romaji": "ku", "stroke_count": 1 },
-      { "character": "け", "romaji": "ke", "stroke_count": 3 },
-      { "character": "こ", "romaji": "ko", "stroke_count": 2 }
+      { "character": "か", "romaji": "ka", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/basic/ka.svg" },
+      { "character": "き", "romaji": "ki", "stroke_count": 4, "svgPath": "/svg/hiragana-stroke-order/basic/ki.svg" },
+      { "character": "く", "romaji": "ku", "stroke_count": 1, "svgPath": "/svg/hiragana-stroke-order/basic/ku.svg" },
+      { "character": "け", "romaji": "ke", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/basic/ke.svg" },
+      { "character": "こ", "romaji": "ko", "stroke_count": 2, "svgPath": "/svg/hiragana-stroke-order/basic/ko.svg" }
     ],
     [
-      { "character": "さ", "romaji": "sa", "stroke_count": 3 },
-      { "character": "し", "romaji": "shi", "stroke_count": 1 },
-      { "character": "す", "romaji": "su", "stroke_count": 2 },
-      { "character": "せ", "romaji": "se", "stroke_count": 3 },
-      { "character": "そ", "romaji": "so", "stroke_count": 1 }
+      { "character": "さ", "romaji": "sa", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/basic/sa.svg" },
+      { "character": "し", "romaji": "shi", "stroke_count": 1, "svgPath": "/svg/hiragana-stroke-order/basic/shi.svg" },
+      { "character": "す", "romaji": "su", "stroke_count": 2, "svgPath": "/svg/hiragana-stroke-order/basic/su.svg" },
+      { "character": "せ", "romaji": "se", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/basic/se.svg" },
+      { "character": "そ", "romaji": "so", "stroke_count": 1, "svgPath": "/svg/hiragana-stroke-order/basic/so.svg" }
     ],
     [
-      { "character": "た", "romaji": "ta", "stroke_count": 4 },
-      { "character": "ち", "romaji": "chi", "stroke_count": 2 },
-      { "character": "つ", "romaji": "tsu", "stroke_count": 1 },
-      { "character": "て", "romaji": "te", "stroke_count": 1 },
-      { "character": "と", "romaji": "to", "stroke_count": 2 }
+      { "character": "た", "romaji": "ta", "stroke_count": 4, "svgPath": "/svg/hiragana-stroke-order/basic/ta.svg" },
+      { "character": "ち", "romaji": "chi", "stroke_count": 2, "svgPath": "/svg/hiragana-stroke-order/basic/chi.svg" },
+      { "character": "つ", "romaji": "tsu", "stroke_count": 1, "svgPath": "/svg/hiragana-stroke-order/basic/tsu.svg" },
+      { "character": "て", "romaji": "te", "stroke_count": 1, "svgPath": "/svg/hiragana-stroke-order/basic/te.svg" },
+      { "character": "と", "romaji": "to", "stroke_count": 2, "svgPath": "/svg/hiragana-stroke-order/basic/to.svg" }
     ],
     [
-      { "character": "な", "romaji": "na", "stroke_count": 4 },
-      { "character": "に", "romaji": "ni", "stroke_count": 3 },
-      { "character": "ぬ", "romaji": "nu", "stroke_count": 2 },
-      { "character": "ね", "romaji": "ne", "stroke_count": 4 },
-      { "character": "の", "romaji": "no", "stroke_count": 1 }
+      { "character": "な", "romaji": "na", "stroke_count": 4, "svgPath": "/svg/hiragana-stroke-order/basic/na.svg" },
+      { "character": "に", "romaji": "ni", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/basic/ni.svg" },
+      { "character": "ぬ", "romaji": "nu", "stroke_count": 2, "svgPath": "/svg/hiragana-stroke-order/basic/nu.svg" },
+      { "character": "ね", "romaji": "ne", "stroke_count": 4, "svgPath": "/svg/hiragana-stroke-order/basic/ne.svg" },
+      { "character": "の", "romaji": "no", "stroke_count": 1, "svgPath": "/svg/hiragana-stroke-order/basic/no.svg" }
     ],
     [
-      { "character": "は", "romaji": "ha", "stroke_count": 3 },
-      { "character": "ひ", "romaji": "hi", "stroke_count": 2 },
-      { "character": "ふ", "romaji": "fu", "stroke_count": 4 },
-      { "character": "へ", "romaji": "he", "stroke_count": 1 },
-      { "character": "ほ", "romaji": "ho", "stroke_count": 4 }
+      { "character": "は", "romaji": "ha", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/basic/ha.svg" },
+      { "character": "ひ", "romaji": "hi", "stroke_count": 2, "svgPath": "/svg/hiragana-stroke-order/basic/hi.svg" },
+      { "character": "ふ", "romaji": "fu", "stroke_count": 4, "svgPath": "/svg/hiragana-stroke-order/basic/fu.svg" },
+      { "character": "へ", "romaji": "he", "stroke_count": 1, "svgPath": "/svg/hiragana-stroke-order/basic/he.svg" },
+      { "character": "ほ", "romaji": "ho", "stroke_count": 4, "svgPath": "/svg/hiragana-stroke-order/basic/ho.svg" }
     ],
     [
-      { "character": "ま", "romaji": "ma", "stroke_count": 3 },
-      { "character": "み", "romaji": "mi", "stroke_count": 2 },
-      { "character": "む", "romaji": "mu", "stroke_count": 3 },
-      { "character": "め", "romaji": "me", "stroke_count": 2 },
-      { "character": "も", "romaji": "mo", "stroke_count": 3 }
+      { "character": "ま", "romaji": "ma", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/basic/ma.svg" },
+      { "character": "み", "romaji": "mi", "stroke_count": 2, "svgPath": "/svg/hiragana-stroke-order/basic/mi.svg" },
+      { "character": "む", "romaji": "mu", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/basic/mu.svg" },
+      { "character": "め", "romaji": "me", "stroke_count": 2, "svgPath": "/svg/hiragana-stroke-order/basic/me.svg" },
+      { "character": "も", "romaji": "mo", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/basic/mo.svg" }
     ],
     [
-      { "character": "や", "romaji": "ya", "stroke_count": 3 },
-      { "character": "ゆ", "romaji": "yu", "stroke_count": 2 },
-      { "character": "よ", "romaji": "yo", "stroke_count": 2 }
+      { "character": "や", "romaji": "ya", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/basic/ya.svg" },
+      { "character": "ゆ", "romaji": "yu", "stroke_count": 2, "svgPath": "/svg/hiragana-stroke-order/basic/yu.svg" },
+      { "character": "よ", "romaji": "yo", "stroke_count": 2, "svgPath": "/svg/hiragana-stroke-order/basic/yo.svg" }
     ],
     [
-      { "character": "ら", "romaji": "ra", "stroke_count": 2 },
-      { "character": "り", "romaji": "ri", "stroke_count": 2 },
-      { "character": "る", "romaji": "ru", "stroke_count": 1 },
-      { "character": "れ", "romaji": "re", "stroke_count": 2 },
-      { "character": "ろ", "romaji": "ro", "stroke_count": 1 }
+      { "character": "ら", "romaji": "ra", "stroke_count": 2, "svgPath": "/svg/hiragana-stroke-order/basic/ra.svg" },
+      { "character": "り", "romaji": "ri", "stroke_count": 2, "svgPath": "/svg/hiragana-stroke-order/basic/ri.svg" },
+      { "character": "る", "romaji": "ru", "stroke_count": 1, "svgPath": "/svg/hiragana-stroke-order/basic/ru.svg" },
+      { "character": "れ", "romaji": "re", "stroke_count": 2, "svgPath": "/svg/hiragana-stroke-order/basic/re.svg" },
+      { "character": "ろ", "romaji": "ro", "stroke_count": 1, "svgPath": "/svg/hiragana-stroke-order/basic/ro.svg" }
     ],
     [
-      { "character": "わ", "romaji": "wa", "stroke_count": 2 },
-      { "character": "を", "romaji": "wo", "stroke_count": 3 },
-      { "character": "ん", "romaji": "n", "stroke_count": 1 }
+      { "character": "わ", "romaji": "wa", "stroke_count": 2, "svgPath": "/svg/hiragana-stroke-order/basic/wa.svg" },
+      { "character": "を", "romaji": "wo", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/basic/wo.svg" },
+      { "character": "ん", "romaji": "n", "stroke_count": 1, "svgPath": "/svg/hiragana-stroke-order/basic/n.svg" }
     ]
   ],
 
   "dakuten": [
     [
-      { "character": "が", "romaji": "ga", "stroke_count": 5 },
-      { "character": "ぎ", "romaji": "gi", "stroke_count": 6 },
-      { "character": "ぐ", "romaji": "gu", "stroke_count": 3 },
-      { "character": "げ", "romaji": "ge", "stroke_count": 5 },
-      { "character": "ご", "romaji": "go", "stroke_count": 4 }
+      { "character": "が", "romaji": "ga", "stroke_count": 5, "svgPath": "/svg/hiragana-stroke-order/dakuten/ga.svg" },
+      { "character": "ぎ", "romaji": "gi", "stroke_count": 6, "svgPath": "/svg/hiragana-stroke-order/dakuten/gi.svg" },
+      { "character": "ぐ", "romaji": "gu", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/dakuten/gu.svg" },
+      { "character": "げ", "romaji": "ge", "stroke_count": 5, "svgPath": "/svg/hiragana-stroke-order/dakuten/ge.svg" },
+      { "character": "ご", "romaji": "go", "stroke_count": 4, "svgPath": "/svg/hiragana-stroke-order/dakuten/go.svg" }
     ],
     [
-      { "character": "ざ", "romaji": "za", "stroke_count": 5 },
-      { "character": "じ", "romaji": "ji", "stroke_count": 3 },
-      { "character": "ず", "romaji": "zu", "stroke_count": 4 },
-      { "character": "ぜ", "romaji": "ze", "stroke_count": 5 },
-      { "character": "ぞ", "romaji": "zo", "stroke_count": 3 }
+      { "character": "ざ", "romaji": "za", "stroke_count": 5, "svgPath": "/svg/hiragana-stroke-order/dakuten/za.svg" },
+      { "character": "じ", "romaji": "ji", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/dakuten/ji_%23U3058.svg" },
+      { "character": "ず", "romaji": "zu", "stroke_count": 4, "svgPath": "/svg/hiragana-stroke-order/dakuten/zu_%23U305a.svg" },
+      { "character": "ぜ", "romaji": "ze", "stroke_count": 5, "svgPath": "/svg/hiragana-stroke-order/dakuten/ze.svg" },
+      { "character": "ぞ", "romaji": "zo", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/dakuten/zo.svg" }
     ],
     [
-      { "character": "だ", "romaji": "da", "stroke_count": 6 },
-      { "character": "ぢ", "romaji": "ji", "stroke_count": 4 },
-      { "character": "づ", "romaji": "zu", "stroke_count": 3 },
-      { "character": "で", "romaji": "de", "stroke_count": 3 },
-      { "character": "ど", "romaji": "do", "stroke_count": 4 }
+      { "character": "だ", "romaji": "da", "stroke_count": 6, "svgPath": "/svg/hiragana-stroke-order/dakuten/da.svg" },
+      { "character": "ぢ", "romaji": "ji", "stroke_count": 4, "svgPath": "/svg/hiragana-stroke-order/dakuten/ji_%23U3062.svg" },
+      { "character": "づ", "romaji": "zu", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/dakuten/zu_%23U3065.svg" },
+      { "character": "で", "romaji": "de", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/dakuten/de.svg" },
+      { "character": "ど", "romaji": "do", "stroke_count": 4, "svgPath": "/svg/hiragana-stroke-order/dakuten/do.svg" }
     ],
     [
-      { "character": "ば", "romaji": "ba", "stroke_count": 5 },
-      { "character": "び", "romaji": "bi", "stroke_count": 4 },
-      { "character": "ぶ", "romaji": "bu", "stroke_count": 6 },
-      { "character": "べ", "romaji": "be", "stroke_count": 3 },
-      { "character": "ぼ", "romaji": "bo", "stroke_count": 6 }
+      { "character": "ば", "romaji": "ba", "stroke_count": 5, "svgPath": "/svg/hiragana-stroke-order/dakuten/ba.svg" },
+      { "character": "び", "romaji": "bi", "stroke_count": 4, "svgPath": "/svg/hiragana-stroke-order/dakuten/bi.svg" },
+      { "character": "ぶ", "romaji": "bu", "stroke_count": 6, "svgPath": "/svg/hiragana-stroke-order/dakuten/bu.svg" },
+      { "character": "べ", "romaji": "be", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/dakuten/be.svg" },
+      { "character": "ぼ", "romaji": "bo", "stroke_count": 6, "svgPath": "/svg/hiragana-stroke-order/dakuten/bo.svg" }
     ]
   ],
 
   "handakuten": [
     [
-      { "character": "ぱ", "romaji": "pa", "stroke_count": 4 },
-      { "character": "ぴ", "romaji": "pi", "stroke_count": 3 },
-      { "character": "ぷ", "romaji": "pu", "stroke_count": 5 },
-      { "character": "ぺ", "romaji": "pe", "stroke_count": 2 },
-      { "character": "ぽ", "romaji": "po", "stroke_count": 5 }
+      { "character": "ぱ", "romaji": "pa", "stroke_count": 4, "svgPath": "/svg/hiragana-stroke-order/handakuten/pa.svg" },
+      { "character": "ぴ", "romaji": "pi", "stroke_count": 3, "svgPath": "/svg/hiragana-stroke-order/handakuten/pi.svg" },
+      { "character": "ぷ", "romaji": "pu", "stroke_count": 5, "svgPath": "/svg/hiragana-stroke-order/handakuten/pu.svg" },
+      { "character": "ぺ", "romaji": "pe", "stroke_count": 2, "svgPath": "/svg/hiragana-stroke-order/handakuten/pe.svg" },
+      { "character": "ぽ", "romaji": "po", "stroke_count": 5, "svgPath": "/svg/hiragana-stroke-order/handakuten/po.svg" }
     ]
   ],
 
   "yoon": [
     [
-      { "character": "きゃ", "romaji": "kya" },
-      { "character": "きゅ", "romaji": "kyu" },
-      { "character": "きょ", "romaji": "kyo" }
+      { "character": "きゃ", "romaji": "kya", "svgPath": "/svg/hiragana-stroke-order/yoon/kya.svg" },
+      { "character": "きゅ", "romaji": "kyu", "svgPath": "/svg/hiragana-stroke-order/yoon/kyu.svg" },
+      { "character": "きょ", "romaji": "kyo", "svgPath": "/svg/hiragana-stroke-order/yoon/kyo.svg" }
     ],
     [
-      { "character": "しゃ", "romaji": "sha" },
-      { "character": "しゅ", "romaji": "shu" },
-      { "character": "しょ", "romaji": "sho" }
+      { "character": "しゃ", "romaji": "sha", "svgPath": "/svg/hiragana-stroke-order/yoon/sha.svg" },
+      { "character": "しゅ", "romaji": "shu", "svgPath": "/svg/hiragana-stroke-order/yoon/shu.svg" },
+      { "character": "しょ", "romaji": "sho", "svgPath": "/svg/hiragana-stroke-order/yoon/sho.svg" }
     ],
     [
-      { "character": "ちゃ", "romaji": "cha" },
-      { "character": "ちゅ", "romaji": "chu" },
-      { "character": "ちょ", "romaji": "cho" }
+      { "character": "ちゃ", "romaji": "cha", "svgPath": "/svg/hiragana-stroke-order/yoon/cha.svg" },
+      { "character": "ちゅ", "romaji": "chu", "svgPath": "/svg/hiragana-stroke-order/yoon/chu.svg" },
+      { "character": "ちょ", "romaji": "cho", "svgPath": "/svg/hiragana-stroke-order/yoon/cho.svg" }
     ],
     [
-      { "character": "にゃ", "romaji": "nya" },
-      { "character": "にゅ", "romaji": "nyu" },
-      { "character": "にょ", "romaji": "nyo" }
+      { "character": "にゃ", "romaji": "nya", "svgPath": "/svg/hiragana-stroke-order/yoon/nya.svg" },
+      { "character": "にゅ", "romaji": "nyu", "svgPath": "/svg/hiragana-stroke-order/yoon/nyu.svg" },
+      { "character": "にょ", "romaji": "nyo", "svgPath": "/svg/hiragana-stroke-order/yoon/nyo.svg" }
     ],
     [
-      { "character": "ひゃ", "romaji": "hya" },
-      { "character": "ひゅ", "romaji": "hyu" },
-      { "character": "ひょ", "romaji": "hyo" }
+      { "character": "ひゃ", "romaji": "hya", "svgPath": "/svg/hiragana-stroke-order/yoon/hya.svg" },
+      { "character": "ひゅ", "romaji": "hyu", "svgPath": "/svg/hiragana-stroke-order/yoon/hyu.svg" },
+      { "character": "ひょ", "romaji": "hyo", "svgPath": "/svg/hiragana-stroke-order/yoon/hyo.svg" }
     ],
     [
-      { "character": "みゃ", "romaji": "mya" },
-      { "character": "みゅ", "romaji": "myu" },
-      { "character": "みょ", "romaji": "myo" }
+      { "character": "みゃ", "romaji": "mya", "svgPath": "/svg/hiragana-stroke-order/yoon/mya.svg" },
+      { "character": "みゅ", "romaji": "myu", "svgPath": "/svg/hiragana-stroke-order/yoon/myu.svg" },
+      { "character": "みょ", "romaji": "myo", "svgPath": "/svg/hiragana-stroke-order/yoon/myo.svg" }
     ],
     [
-      { "character": "りゃ", "romaji": "rya" },
-      { "character": "りゅ", "romaji": "ryu" },
-      { "character": "りょ", "romaji": "ryo" }
+      { "character": "りゃ", "romaji": "rya", "svgPath": "/svg/hiragana-stroke-order/yoon/rya.svg" },
+      { "character": "りゅ", "romaji": "ryu", "svgPath": "/svg/hiragana-stroke-order/yoon/ryu.svg" },
+      { "character": "りょ", "romaji": "ryo", "svgPath": "/svg/hiragana-stroke-order/yoon/ryo.svg" }
     ],
     [
-      { "character": "ぎゃ", "romaji": "gya" },
-      { "character": "ぎゅ", "romaji": "gyu" },
-      { "character": "ぎょ", "romaji": "gyo" }
+      { "character": "ぎゃ", "romaji": "gya", "svgPath": "/svg/hiragana-stroke-order/yoon/gya.svg" },
+      { "character": "ぎゅ", "romaji": "gyu", "svgPath": "/svg/hiragana-stroke-order/yoon/gyu.svg" },
+      { "character": "ぎょ", "romaji": "gyo", "svgPath": "/svg/hiragana-stroke-order/yoon/gyo.svg" }
     ],
     [
-      { "character": "じゃ", "romaji": "ja" },
-      { "character": "じゅ", "romaji": "ju" },
-      { "character": "じょ", "romaji": "jo" }
+      { "character": "じゃ", "romaji": "ja", "svgPath": "/svg/hiragana-stroke-order/yoon/ja.svg" },
+      { "character": "じゅ", "romaji": "ju", "svgPath": "/svg/hiragana-stroke-order/yoon/ju.svg" },
+      { "character": "じょ", "romaji": "jo", "svgPath": "/svg/hiragana-stroke-order/yoon/jo.svg" }
     ],
     [
-      { "character": "びゃ", "romaji": "bya" },
-      { "character": "びゅ", "romaji": "byu" },
-      { "character": "びょ", "romaji": "byo" }
+      { "character": "びゃ", "romaji": "bya", "svgPath": "/svg/hiragana-stroke-order/yoon/bya.svg" },
+      { "character": "びゅ", "romaji": "byu", "svgPath": "/svg/hiragana-stroke-order/yoon/byu.svg" },
+      { "character": "びょ", "romaji": "byo", "svgPath": "/svg/hiragana-stroke-order/yoon/byo.svg" }
     ],
     [
-      { "character": "ぴゃ", "romaji": "pya" },
-      { "character": "ぴゅ", "romaji": "pyu" },
-      { "character": "ぴょ", "romaji": "pyo" }
+      { "character": "ぴゃ", "romaji": "pya", "svgPath": "/svg/hiragana-stroke-order/yoon/pya.svg" },
+      { "character": "ぴゅ", "romaji": "pyu", "svgPath": "/svg/hiragana-stroke-order/yoon/pyu.svg" },
+      { "character": "ぴょ", "romaji": "pyo", "svgPath": "/svg/hiragana-stroke-order/yoon/pyo.svg" }
     ]
   ]
 }

@@ -1,8 +1,9 @@
 import type {Metadata} from "next";
 import {Noto_Sans_JP, Shippori_Mincho} from "next/font/google";
 import "./globals.css";
-import Navbar from "@/component/Navbar";
-import Footer from "@/component/Footer";
+import Navbar from "@/components/organisms/Navbar";
+import Footer from "@/components/organisms/Footer";
+import { AutoHintProvider } from "@/context/AutoHintContext";
 
 const notoSansJP = Noto_Sans_JP({
     variable: "--font-noto-sans-jp",
@@ -16,20 +17,46 @@ const shipporiMincho = Shippori_Mincho({
 });
 
 export const metadata: Metadata = {
-    title: "Belajar Bahasa Jepang",
-    description: "Belajar Bahasa Jepang",
+    title: {
+        default: "Belajar Huruf Jepang",
+        template: "%s | Belajar Huruf Jepang",
+    },
+    description: "Platform interaktif untuk belajar menulis dan menghafal huruf Hiragana Jepang, mulai dari pengenalan hingga kuis sambung-cocok.",
     authors: {
         name: "Ubay Lahmudien",
+        url: "https://github.com/Mudien-UB",
     },
-    creator: "github.com/Mudien-UB",
+    creator: "Ubay Lahmudien",
     keywords: [
-        "Belajar Bahasa Jepang",
-        "Belajar",
-        "Bahasa Jepang",
+        "Belajar Huruf Jepang",
+        "Belajar Hiragana",
+        "Menulis Hiragana",
+        "Huruf Jepang",
         "Hiragana",
-    ]
-
-
+        "Aplikasi Belajar Hiragana",
+        "Cara Menulis Hiragana",
+        "Latihan Hiragana Dasar",
+        "Dakuten",
+        "Handakuten",
+        "Yoon",
+        "Tutorial Hiragana",
+        "Edukasi Bahasa Jepang",
+        "Kuis Hiragana",
+        "Sambung Cocok Hiragana",
+        "Belajar Aksara Jepang"
+    ],
+    openGraph: {
+        title: "Belajar Huruf Jepang",
+        description: "Platform interaktif untuk belajar menulis dan menghafal huruf Hiragana Jepang dengan mudah dan menyenangkan.",
+        siteName: "Belajar Huruf Jepang",
+        type: "website",
+        locale: "id_ID",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Belajar Huruf Jepang",
+        description: "Platform interaktif untuk belajar menulis dan menghafal huruf Hiragana Jepang.",
+    },
 };
 
 export default function RootLayout({
@@ -39,13 +66,15 @@ export default function RootLayout({
 }>) {
     return (
         <html
-            lang="en"
+            lang="id"
             className={`${notoSansJP.variable} ${shipporiMincho.variable} h-full antialiased`}
         >
-        <body className="min-h-screen flex flex-col bg-background text-foreground font-sans">
-        <Navbar/>
-        <main className="grow flex flex-col">{children}</main>
-        <Footer/>
+        <body className="min-h-screen flex flex-col bg-background text-foreground font-sans overflow-x-hidden">
+        <AutoHintProvider>
+            <Navbar/>
+            <main className="grow flex flex-col">{children}</main>
+            <Footer/>
+        </AutoHintProvider>
         </body>
         </html>
     );

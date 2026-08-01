@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 109" width="320" height="320">
+<style>
+.grid { stroke: #e0e0e0; stroke-width: 0.5; }
+.stroke {
+  fill: none;
+  stroke: #1a1a2e;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation-name: draw;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.arrow {
+  opacity: 0;
+  animation-name: showArrow;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showArrow { to { opacity: 1; } }
+.num {
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  fill: #1d7bd8;
+  font-weight: bold;
+  opacity: 0;
+  animation-name: showNum;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showNum { to { opacity: 1; } }
+</style>
+<rect x="0" y="0" width="109" height="109" fill="#ffffff" stroke="#f0f0f0"/>
+<line x1="54.5" y1="0" x2="54.5" y2="109" class="grid"/>
+<line x1="0" y1="54.5" x2="109" y2="54.5" class="grid"/>
+<g>
+<path d="M32.5,26c1.88,1.75,4.06,1.7,6.88,1.25c3.88-0.62,7.62-1.75,11.88-3.12c4.26-1.37,6.25-0.12,4.5,5.12c-1.75,5.24-6.66,17.39-12,30.12c-13.63,32.51-29.26,29.26-29.26,18.63c0-14.25,20.48-15.36,33-13.5c18.5,2.75,30,6.62,44.38,14.25" class="stroke" style="stroke-dasharray:196.3;stroke-dashoffset:196.3;animation-duration:1.10s;animation-delay:0.00s"/><path d="M79.38,54.75c0.75,2.38,0.49,4.37,0,6.25c-2.12,8.12-7.5,25-22.12,33.75" class="stroke" style="stroke-dasharray:47.7;stroke-dashoffset:47.7;animation-duration:0.53s;animation-delay:1.10s"/>
+<g class="arrow" style="animation-delay:1.05s" transform="translate(91.9,78.8) rotate(24.3)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.58s" transform="translate(57.3,94.8) rotate(144.7)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g>
+<text x="26.5" y="24.9" class="num" style="animation-delay:0.00s">1</text><text x="71.1" y="52.0" class="num" style="animation-delay:1.10s">2</text>
+</g>
+</svg>

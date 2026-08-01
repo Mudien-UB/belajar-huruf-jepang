@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 109" width="320" height="320">
+<style>
+.grid { stroke: #e0e0e0; stroke-width: 0.5; }
+.stroke {
+  fill: none;
+  stroke: #1a1a2e;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation-name: draw;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.arrow {
+  opacity: 0;
+  animation-name: showArrow;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showArrow { to { opacity: 1; } }
+.num {
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  fill: #1d7bd8;
+  font-weight: bold;
+  opacity: 0;
+  animation-name: showNum;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showNum { to { opacity: 1; } }
+</style>
+<rect x="0" y="0" width="109" height="109" fill="#ffffff" stroke="#f0f0f0"/>
+<line x1="54.5" y1="0" x2="54.5" y2="109" class="grid"/>
+<line x1="0" y1="54.5" x2="109" y2="54.5" class="grid"/>
+<g>
+<path d="M 20.0,25.12 C 21.25,26.0 23.75,27.37 26.5,26.5 C 29.25,25.63 33.81,24.12 37.88,22.0 C 43.88,18.88 46.300000000000004,20.99 42.13,26.0 C 15.000000000000004,58.62 18.369999999999997,84.5 40.60999999999999,88.87999999999998 M 40.61,88.88 C 58.68,92.44 78.24000000000001,72.5 76.24000000000001,32.370000000000005 M 76.24000000000001,32.37 C 75.52000000000001,17.869999999999997 76.07000000000001,17.589999999999996 80.36000000000001,30.619999999999997 C 84.12000000000002,42.0 90.62000000000002,51.379999999999995 96.50000000000001,57.12" class="stroke" style="stroke-dasharray:237.5;stroke-dashoffset:237.5;animation-duration:1.10s;animation-delay:0.00s"/><path d="M 86.5,13.5 C 89.25,15.25 92.5,18.88 94.25,22.0" class="stroke" style="stroke-dasharray:11.6;stroke-dashoffset:11.6;animation-duration:0.35s;animation-delay:1.10s"/><path d="M 92.87,8.62 C 95.93,10.19 99.55000000000001,13.44 101.49000000000001,16.240000000000002" class="stroke" style="stroke-dasharray:11.6;stroke-dashoffset:11.6;animation-duration:0.35s;animation-delay:1.45s"/><g class="arrow" style="animation-delay:1.05s" transform="translate(96.5,57.1) rotate(55.1)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.40s" transform="translate(94.2,22.0) rotate(59.1)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.75s" transform="translate(101.5,16.2) rotate(53.5)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><text x="18.4" y="17.6" class="num" style="animation-delay:0.00s">1</text><text x="78.9" y="12.5" class="num" style="animation-delay:1.10s">2</text><text x="85.0" y="7.4" class="num" style="animation-delay:1.45s">3</text>
+</g>
+</svg>

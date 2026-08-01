@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 109" width="320" height="232">
+<style>
+.grid { stroke: #e0e0e0; stroke-width: 0.5; }
+.stroke {
+  fill: none;
+  stroke: #1a1a2e;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation-name: draw;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.arrow {
+  opacity: 0;
+  animation-name: showArrow;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showArrow { to { opacity: 1; } }
+.num {
+  font-family: Arial, sans-serif;
+  fill: #1d7bd8;
+  font-weight: bold;
+  opacity: 0;
+  animation-name: showNum;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showNum { to { opacity: 1; } }
+</style>
+<rect x="0" y="0" width="150" height="109" fill="#ffffff" stroke="#f0f0f0"/>
+<line x1="75.0" y1="0" x2="75.0" y2="109" class="grid"/>
+<line x1="0" y1="54.5" x2="150" y2="54.5" class="grid"/>
+<g>
+<path d="M 24.53,22.75 C 25.78,24.25 26.150000000000002,26.5 25.650000000000002,29.13 C 22.650000000000002,45.01 16.650000000000002,61.629999999999995 18.270000000000003,76.74999999999999 M 18.270000000000003,76.75 C 20.290000000000003,95.59 22.770000000000003,82.5 26.770000000000003,73.25" class="stroke" style="stroke-width:3;stroke-dasharray:79.9;stroke-dashoffset:79.9;animation-duration:0.89s;animation-delay:0.00s"/><path d="M 53.2,30.64 C 54.160000000000004,31.43 55.64,32.22 58.300000000000004,31.990000000000002 C 65.28,31.380000000000003 73.31,28.69 80.34000000000002,28.630000000000003 M 80.34,28.630000000000003 C 93.53,28.520000000000003 81.84,32.38 71.95,35.980000000000004" class="stroke" style="stroke-width:3;stroke-dasharray:49.8;stroke-dashoffset:49.8;animation-duration:0.55s;animation-delay:0.89s"/><path d="M 52.53,68.0 C 54.29,80.92 64.45,84.01 76.75999999999999,82.93 M 76.76,82.93 C 81.84,82.48 85.66000000000001,82.13000000000001 91.03,80.87" class="stroke" style="stroke-width:3;stroke-dasharray:46.6;stroke-dashoffset:46.6;animation-duration:0.52s;animation-delay:1.44s"/><path d="M 96.046,79.774 C 97.014,80.612 98.750,81.061 100.492,80.222 C 110.034,75.653 118.925,70.238 126.700,70.303 C 131.353,70.375 134.954,72.435 134.909,76.641 C 134.909,80.937 129.299,85.188 122.279,85.832" class="stroke" style="stroke-width:3.00;stroke-dasharray:61.50;stroke-dashoffset:61.50;animation-duration:0.68s;animation-delay:1.96s"/><path d="M 111.060,62.503 C 113.706,62.952 116.423,64.590 116.989,65.916 C 118.087,68.496 116.475,67.138 115.506,67.268" class="stroke" style="stroke-width:3.00;stroke-dasharray:10.40;stroke-dashoffset:10.40;animation-duration:0.35s;animation-delay:2.64s"/><path d="M 102.396,66.722 C 103.618,67.690 103.923,68.522 104.229,69.757 C 105.581,75.172 109.962,90.798 111.834,96.661 C 112.166,97.714 112.803,99.885 113.316,101.497" class="stroke" style="stroke-width:3.00;stroke-dasharray:36.60;stroke-dashoffset:36.60;animation-duration:0.41s;animation-delay:2.99s"/><g class="arrow" style="animation-delay:0.84s" transform="translate(26.8,73.3) rotate(-69.0)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.39s" transform="translate(71.9,36.0) rotate(160.0)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.91s" transform="translate(91.0,80.9) rotate(-11.4)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:2.59s" transform="translate(122.25,85.88) rotate(164.1) scale(1.000)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:2.94s" transform="translate(115.55,67.28) rotate(-171.6) scale(1.000)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:3.35s" transform="translate(113.35,101.48) rotate(73.0) scale(1.000)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><text x="16.8" y="22.1" class="num" style="font-size:9px;animation-delay:0.00s">1</text><text x="46.9" y="29.0" class="num" style="font-size:9px;animation-delay:0.89s">2</text><text x="46.4" y="66.0" class="num" style="font-size:9px;animation-delay:1.44s">3</text><text x="93.35" y="77.18" class="num" style="font-size:9.00px;animation-delay:1.96s">4</text><text x="106.65" y="61.28" class="num" style="font-size:9.00px;animation-delay:2.64s">5</text><text x="96.75" y="66.48" class="num" style="font-size:9.00px;animation-delay:2.99s">6</text>
+</g>
+</svg>

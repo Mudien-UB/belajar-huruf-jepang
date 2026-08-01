@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 109" width="320" height="320">
+<style>
+.grid { stroke: #e0e0e0; stroke-width: 0.5; }
+.stroke {
+  fill: none;
+  stroke: #1a1a2e;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation-name: draw;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.arrow {
+  opacity: 0;
+  animation-name: showArrow;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showArrow { to { opacity: 1; } }
+.num {
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  fill: #1d7bd8;
+  font-weight: bold;
+  opacity: 0;
+  animation-name: showNum;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showNum { to { opacity: 1; } }
+</style>
+<rect x="0" y="0" width="109" height="109" fill="#ffffff" stroke="#f0f0f0"/>
+<line x1="54.5" y1="0" x2="54.5" y2="109" class="grid"/>
+<line x1="0" y1="54.5" x2="109" y2="54.5" class="grid"/>
+<g>
+<path d="M33.29,14.5c1.62,1.62,2.1,3.21,1.88,5.88c-1.03,11.93-2.06,31.66-2.53,53.12c-0.1,4.62-0.18,9.31-0.22,14" class="stroke" style="stroke-dasharray:73.6;stroke-dashoffset:73.6;animation-duration:0.82s;animation-delay:0.00s"/><path d="M17.16,37.88c1.62,0.88,3.25,1.38,5.62,0.75c2.14-0.56,7.8-2.31,12.37-4.03c6.26-2.35,6.88-1.47,3.12,3.63c-5.56,7.53-13.02,17.38-18.48,26.77c-5.6,9.62-3.45,8.3,2,3c19.12-18.62,38.5-39.12,54.12-39.12c11.38,0,12.88,11.25,12.88,32.5c0,28.62-30.18,24.88-30.18,16.26c0-9.63,18.73-7.82,28.06-1.88c2.75,1.75,5.88,4.88,7.5,6.75" class="stroke" style="stroke-dasharray:273.7;stroke-dashoffset:273.7;animation-duration:1.10s;animation-delay:0.82s"/>
+<g class="arrow" style="animation-delay:0.77s" transform="translate(32.4,87.5) rotate(90.7)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.87s" transform="translate(94.2,82.5) rotate(24.0)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g>
+<text x="25.9" y="13.8" class="num" style="animation-delay:0.00s">1</text><text x="12.9" y="34.1" class="num" style="animation-delay:0.82s">2</text>
+</g>
+</svg>

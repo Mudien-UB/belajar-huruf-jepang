@@ -1,0 +1,3 @@
+Stroke path data derived from the KanjiVG project (http://kanjivg.tagaini.net),
+Copyright (C) Ulrich Apel, licensed under Creative Commons Attribution-Share Alike 3.0.
+https://creativecommons.org/licenses/by-sa/3.0/

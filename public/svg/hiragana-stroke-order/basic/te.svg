@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 109" width="320" height="320">
+<style>
+.grid { stroke: #e0e0e0; stroke-width: 0.5; }
+.stroke {
+  fill: none;
+  stroke: #1a1a2e;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation-name: draw;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.arrow {
+  opacity: 0;
+  animation-name: showArrow;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showArrow { to { opacity: 1; } }
+.num {
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  fill: #1d7bd8;
+  font-weight: bold;
+  opacity: 0;
+  animation-name: showNum;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showNum { to { opacity: 1; } }
+</style>
+<rect x="0" y="0" width="109" height="109" fill="#ffffff" stroke="#f0f0f0"/>
+<line x1="54.5" y1="0" x2="54.5" y2="109" class="grid"/>
+<line x1="0" y1="54.5" x2="109" y2="54.5" class="grid"/>
+<g>
+<path d="M20.5,26.38c1.87,1.62,4.42,1.97,8.12,1.37c21.75-3.5,33-5.12,50.12-8.38c12.34-2.34,13-0.88,0.38,1.38c-17.89,3.19-33.78,19.12-33.78,37.62c0,20.5,17.91,30.25,35.16,30.25" class="stroke" style="stroke-dasharray:185.2;stroke-dashoffset:185.2;animation-duration:1.10s;animation-delay:0.00s"/>
+<g class="arrow" style="animation-delay:1.05s" transform="translate(80.5,88.6) rotate(11.9)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g>
+<text x="16.4" y="20.0" class="num" style="animation-delay:0.00s">1</text>
+</g>
+</svg>

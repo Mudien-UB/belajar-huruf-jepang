@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 109" width="320" height="320">
+<style>
+.grid { stroke: #e0e0e0; stroke-width: 0.5; }
+.stroke {
+  fill: none;
+  stroke: #1a1a2e;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation-name: draw;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.arrow {
+  opacity: 0;
+  animation-name: showArrow;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showArrow { to { opacity: 1; } }
+.num {
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  fill: #1d7bd8;
+  font-weight: bold;
+  opacity: 0;
+  animation-name: showNum;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showNum { to { opacity: 1; } }
+</style>
+<rect x="0" y="0" width="109" height="109" fill="#ffffff" stroke="#f0f0f0"/>
+<line x1="54.5" y1="0" x2="54.5" y2="109" class="grid"/>
+<line x1="0" y1="54.5" x2="109" y2="54.5" class="grid"/>
+<g>
+<path d="M27,38.9c2.42,1.33,5.38,1.47,8.32,1.06c8.79-1.24,28.67-7.76,34.15-10.43c2.79-1.36,3.78-1.91,6.28-3.53" class="stroke" style="stroke-dasharray:51.5;stroke-dashoffset:51.5;animation-duration:0.57s;animation-delay:0.00s"/><path d="M41.5,13.88c1.5,0.88,3.63,2.94,4.5,5.12c5.5,13.75,15.25,27.62,26.87,39.5c7.98,8.15,6.38,10-6,3.12" class="stroke" style="stroke-dasharray:75.6;stroke-dashoffset:75.6;animation-duration:0.84s;animation-delay:0.57s"/><path d="M35.25,80.5c4.5,11.75,20.88,12.5,38.38,7.5" class="stroke" style="stroke-dasharray:42.8;stroke-dashoffset:42.8;animation-duration:0.48s;animation-delay:1.41s"/>
+<g class="arrow" style="animation-delay:0.52s" transform="translate(75.7,26.0) rotate(-30.6)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.36s" transform="translate(66.9,61.6) rotate(-155.9)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.84s" transform="translate(73.6,88.0) rotate(-14.3)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g>
+<text x="21.2" y="38.5" class="num" style="animation-delay:0.00s">1</text><text x="32.0" y="13.0" class="num" style="animation-delay:0.57s">2</text><text x="28.2" y="77.0" class="num" style="animation-delay:1.41s">3</text>
+</g>
+</svg>

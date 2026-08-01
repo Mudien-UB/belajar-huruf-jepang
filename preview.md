@@ -20,11 +20,13 @@ Aplikasi web interaktif untuk mempelajari sistem penulisan Hiragana Jepang.
   - Antarmuka sesi: Menampilkan karakter, navigasi antar sesi (Back/Next), dan status penyelesaian kuis.
   - **Hasil:** Menampilkan kunci jawaban lengkap dalam format tabel (Karakter, Romaji, Stroke Count).
 
-### 3. Latihan Kata (`/hiragana/latihan/kata`)
-- **Fungsi:** Mempelajari kosakata dasar berbasis hiragana.
-- **Mekanisme:**
-  - Mirip dengan Latihan Huruf, menggunakan `LevelSelector` untuk menentukan tingkat kesulitan.
-  - **Hasil:** Menampilkan tabel kosakata berisi Kata, Kanji (jika ada), Romaji, dan arti dalam Bahasa Indonesia.
+### 3. Latihan Sambung Cocok (`/hiragana/latihan/sambung-cocok`)
+- **Fungsi:** Latihan interaktif untuk mencocokkan karakter Hiragana dengan Romajinya.
+- **Detail:**
+  - Pengguna memilih level, jumlah huruf per kuis, dan jumlah sesi.
+  - Antarmuka menampilkan dua kolom: satu berisi karakter Hiragana, dan satu berisi Romaji yang harus dicocokkan.
+  - **Fitur:** Termasuk tutorial untuk panduan penggunaan dan fitur *preview* untuk melihat pasangan karakter yang benar selama latihan berlangsung.
+  - Logika kuis: Dikelola oleh `getSambungCocokQuiz` dari `lib/hiragana.ts`.
 
 ## Struktur Data & Level
 Data diatur dalam level kesulitan:

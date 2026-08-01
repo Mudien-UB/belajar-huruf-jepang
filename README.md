@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Belajar Hiragana
 
-## Getting Started
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+![Status](https://img.shields.io/badge/Status-In_Development-yellow)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
 
-First, run the development server:
+Aplikasi web interaktif untuk mempelajari sistem penulisan Hiragana Jepang.
 
+## Deskripsi
+Belajar Hiragana adalah platform pembelajaran bahasa Jepang yang dirancang untuk membantu pengguna menguasai penulisan dan pengenalan karakter Hiragana melalui metode interaktif, latihan kuis, dan visualisasi *stroke order*.
+
+## Fitur
+- **Pengenalan Hiragana:** Referensi visual karakter Hiragana yang dikelompokkan (Basic, Dakuten, Handakuten, Yoon).
+- **Latihan Huruf:** Kuis interaktif untuk menguji kemampuan mengenali karakter Hiragana.
+- **Latihan Sambung Cocok:** Latihan mencocokkan karakter Hiragana dengan Romaji, dilengkapi fitur tutorial dan *preview* pasangan karakter.
+- **Visualisasi Stroke Order:** Panduan visual cara menulis setiap karakter.
+
+## Tech Stack
+- **Framework:** Next.js
+- **Bahasa:** TypeScript
+- **Styling:** Tailwind CSS (via PostCSS)
+- **Data:** JSON-based data storage
+
+## Cara Install
+1. Clone repositori:
+   ```bash
+   git clone <url-repositori>
+   cd belajar-bahasa-jepang
+   ```
+2. Install dependensi:
+   ```bash
+   npm install
+   ```
+
+## Cara Menjalankan
+Untuk menjalankan dalam mode pengembangan:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+Buka `http://localhost:3000` di browser Anda.
+
+## Cara Build
+Untuk melakukan build produksi:
+```bash
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Struktur Folder
+```text
+├── src/
+│   ├── app/           # Halaman Next.js
+│   ├── components/    # Komponen UI (atoms, molecules, organisms)
+│   ├── context/       # State management global
+│   ├── lib/           # Logika bisnis/utility
+│   └── type/          # Definisi TypeScript
+├── public/            # Aset statis (data JSON, SVG)
+└── ...
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Roadmap
+- [x] Implementasi Hiragana (Pengenalan & Latihan)
+- [x] Implementasi Sambung Cocok Hiragana
+- [ ] **Implementasi Katakana** (Pengenalan & Latihan)
+- [ ] Implementasi Sambung Cocok Katakana
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Cara Berkontribusi
+Kami sangat terbuka untuk kontribusi! Silakan buat *issue* atau *pull request* untuk fitur baru atau perbaikan bug.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Lisensi
+[MIT](LICENSE)

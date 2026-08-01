@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109 109" width="320" height="320">
+<style>
+.grid { stroke: #e0e0e0; stroke-width: 0.5; }
+.stroke {
+  fill: none;
+  stroke: #1a1a2e;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation-name: draw;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.arrow {
+  opacity: 0;
+  animation-name: showArrow;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showArrow { to { opacity: 1; } }
+.num {
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  fill: #1d7bd8;
+  font-weight: bold;
+  opacity: 0;
+  animation-name: showNum;
+  animation-duration: 0.01s;
+  animation-fill-mode: forwards;
+}
+@keyframes showNum { to { opacity: 1; } }
+</style>
+<rect x="0" y="0" width="109" height="109" fill="#ffffff" stroke="#f0f0f0"/>
+<line x1="54.5" y1="0" x2="54.5" y2="109" class="grid"/>
+<line x1="0" y1="54.5" x2="109" y2="54.5" class="grid"/>
+<g>
+<path d="M 38.4,22.0 C 40.28,23.25 43.379999999999995,23.05 45.9,22.38 C 52.4,20.63 59.15,18.63 65.28,17.0 C 69.91,15.77 72.46000000000001,19.06 68.9,22.25 C 56.78000000000001,33.12 37.760000000000005,46.64999999999999 28.900000000000006,52.5 C 22.650000000000006,56.62 23.020000000000007,58.25 30.280000000000005,56.38 C 47.36,51.96 66.24000000000001,47.7 80.39999999999999,46.0 M 80.4,46.0 C 89.78,44.88 90.02000000000001,46.12 80.9,47.38 C 65.08000000000001,49.550000000000004 46.52,61.63 46.52,73.88 C 46.52,86.75999999999999 58.14,94.25999999999999 78.02000000000001,90.5" class="stroke" style="stroke-dasharray:253.6;stroke-dashoffset:253.6;animation-duration:1.10s;animation-delay:0.00s"/><path d="M 81.78,26.75 C 84.53,28.5 87.78,32.13 89.53,35.25" class="stroke" style="stroke-dasharray:11.6;stroke-dashoffset:11.6;animation-duration:0.35s;animation-delay:1.10s"/><path d="M 88.15,21.88 C 91.21000000000001,23.45 94.83000000000001,26.7 96.77000000000001,29.5" class="stroke" style="stroke-dasharray:11.6;stroke-dashoffset:11.6;animation-duration:0.35s;animation-delay:1.45s"/><g class="arrow" style="animation-delay:1.05s" transform="translate(78.0,90.5) rotate(9.5)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.40s" transform="translate(89.5,35.3) rotate(59.1)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><g class="arrow" style="animation-delay:1.75s" transform="translate(96.8,29.5) rotate(53.5)"><path d="M0,0 L-6,-3 L-6,3 Z" fill="#e63946"/></g><text x="31.9" y="20.5" class="num" style="animation-delay:0.00s">1</text><text x="74.4" y="28.0" class="num" style="animation-delay:1.10s">2</text><text x="80.3" y="21.1" class="num" style="animation-delay:1.45s">3</text>
+</g>
+</svg>
