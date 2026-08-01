@@ -14,16 +14,10 @@ export default function HiraganaHub() {
           Pengenalan
         </Link>
         <Link 
-          href="/hiragana/latihan/huruf"
+          href="/hiragana/latihan/menulis"
           className="px-8 py-4 rounded-xl font-bold text-lg transition-all bg-muted-gold text-paper hover:opacity-90"
         >
-          Latihan Huruf
-        </Link>
-        <Link 
-          href="/hiragana/latihan/kata"
-          className="px-8 py-4 rounded-xl font-bold text-lg transition-all bg-navy text-paper hover:opacity-90"
-        >
-          Latihan Kata
+          Latihan Menulis
         </Link>
       </div>
     </div>

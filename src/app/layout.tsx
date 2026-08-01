@@ -1,8 +1,8 @@
 import type {Metadata} from "next";
 import {Noto_Sans_JP, Shippori_Mincho} from "next/font/google";
 import "./globals.css";
-import Navbar from "@/component/Navbar";
-import Footer from "@/component/Footer";
+import Navbar from "@/components/organisms/Navbar";
+import Footer from "@/components/organisms/Footer";
 
 const notoSansJP = Noto_Sans_JP({
     variable: "--font-noto-sans-jp",

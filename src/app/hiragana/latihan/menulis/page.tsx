@@ -2,9 +2,9 @@
 import { useState } from 'react';
 import { getQuizCharacters } from '@/lib/hiragana';
 import { HiraganaCharacter } from '@/type/hiragana';
-import { LevelSelector } from '@/component/LevelSelector';
+import { LevelSelector } from '@/components/molecules/LevelSelector';
 
-export default function LatihanHurufPage() {
+export default function LatihanMenulisHiragana() {
   const [level, setLevel] = useState<number | null>(null);
   const [sessions, setSessions] = useState<HiraganaCharacter[][]>([]);
   const [currentSession, setCurrentSession] = useState(0);

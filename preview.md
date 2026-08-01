@@ -20,12 +20,6 @@ Aplikasi web interaktif untuk mempelajari sistem penulisan Hiragana Jepang.
   - Antarmuka sesi: Menampilkan karakter, navigasi antar sesi (Back/Next), dan status penyelesaian kuis.
   - **Hasil:** Menampilkan kunci jawaban lengkap dalam format tabel (Karakter, Romaji, Stroke Count).
 
-### 3. Latihan Kata (`/hiragana/latihan/kata`)
-- **Fungsi:** Mempelajari kosakata dasar berbasis hiragana.
-- **Mekanisme:**
-  - Mirip dengan Latihan Huruf, menggunakan `LevelSelector` untuk menentukan tingkat kesulitan.
-  - **Hasil:** Menampilkan tabel kosakata berisi Kata, Kanji (jika ada), Romaji, dan arti dalam Bahasa Indonesia.
-
 ## Struktur Data & Level
 Data diatur dalam level kesulitan:
 

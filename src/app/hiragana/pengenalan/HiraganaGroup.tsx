@@ -1,8 +1,8 @@
 "use client";
 
 import {useState} from "react";
-import {Card} from "@/component/Card";
-import {InsightModal} from "@/component/InsightModal";
+import {Card} from "@/components/organisms/Card";
+import {InsightModal} from "@/components/organisms/InsightModal";
 import {HiraganaCharacter, ExampleWord, HiraganaType} from "@/type/hiragana";
 import {getExampleWords} from "@/lib/hiragana";
 
