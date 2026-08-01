@@ -19,6 +19,12 @@ export default function HiraganaHub() {
         >
           Latihan Menulis
         </Link>
+        <Link
+          href="/hiragana/latihan/sambung-cocok"
+          className="px-8 py-4 rounded-xl font-bold text-lg transition-all bg-navy text-paper hover:opacity-90"
+        >
+          Latihan Sambung Cocok
+        </Link>
       </div>
     </div>
   );

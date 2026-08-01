@@ -28,7 +28,7 @@ export default function LatihanMenulisHiragana() {
     return (
       <main className="p-8 flex flex-col items-center">
         <TutorialModal isOpen={showTutorial} onClose={() => setShowTutorial(false)} />
-        <h1 className="text-3xl font-bold mb-6">Pilih Level Latihan Huruf</h1>
+        <h1 className="text-3xl font-bold mb-6">Latihan Huruf</h1>
         <LevelSelector currentLevel={0} onLevelChange={startQuiz} />
       </main>
     );

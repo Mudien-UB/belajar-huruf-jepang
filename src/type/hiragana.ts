@@ -23,3 +23,8 @@ export type ExampleWord = {
 export type ExampleWordsData = {
     [char: string]: ExampleWord[];
 };
+
+export type SambungCocokQuiz = {
+    word: string;
+    romaji: string;
+}
