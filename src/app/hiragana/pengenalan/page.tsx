@@ -1,7 +1,13 @@
 import fs from 'fs';
 import path from 'path';
+import type { Metadata } from 'next';
 import {HiraganaData, HiraganaType} from "@/type/hiragana";
 import {HiraganaGroup} from "./HiraganaGroup";
+
+export const metadata: Metadata = {
+    title: "Pengenalan Huruf Hiragana",
+    description: "Pelajari daftar lengkap huruf Hiragana, mulai dari huruf dasar, dakuten, handakuten, hingga yoon.",
+};
 
 async function getHiraganaData(): Promise<HiraganaData> {
     const filePath = path.join(process.cwd(), 'public', 'data', 'hiragana.json');

@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+    title: "Daftar Huruf Hiragana",
+    description: "Pusat belajar huruf Hiragana Jepang, mencakup pengenalan dan latihan.",
+};
 
 export default function HiraganaHub() {
   return (
