@@ -45,6 +45,9 @@ export const metadata: Metadata = {
         "Sambung Cocok Hiragana",
         "Belajar Aksara Jepang"
     ],
+    verification: {
+        google: "IBqiaru0M7igxwEDLW1RxlWfsICkTSwxg7pp2wUgGoE",
+    },
     openGraph: {
         title: "Belajar Huruf Jepang",
         description: "Platform interaktif untuk belajar menulis dan menghafal huruf Hiragana Jepang dengan mudah dan menyenangkan.",
