@@ -41,7 +41,7 @@ export default function RootLayout({
             lang="en"
             className={`${notoSansJP.variable} ${shipporiMincho.variable} h-full antialiased`}
         >
-        <body className="min-h-screen flex flex-col bg-background text-foreground font-sans">
+        <body className="min-h-screen flex flex-col bg-background text-foreground font-sans overflow-x-hidden">
         <AutoHintProvider>
             <Navbar/>
             <main className="grow flex flex-col">{children}</main>

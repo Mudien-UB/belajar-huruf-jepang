@@ -20,7 +20,8 @@ export const LevelSelector: React.FC<LevelSelectorProps> = ({ currentLevel, onLe
           Lihat Keterangan Level
         </button>
       </div>
-      <div className="flex gap-2">
+
+      <div className="flex flex-wrap gap-2 justify-center items-center">
         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((level) => (
           <button
             key={level}

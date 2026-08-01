@@ -11,11 +11,11 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({ isOpen, onClose })
   return (
     <div className="fixed inset-0 bg-charcoal/50 flex items-center justify-center z-50 p-4" onClick={onClose}>
       <div 
-        className="p-8 rounded-2xl w-full max-w-md bg-paper text-foreground"
+        className="p-6 sm:p-8 rounded-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto bg-paper text-foreground"
         onClick={(e) => e.stopPropagation()}
       >
-        <h2 className="text-2xl font-bold mb-4 text-navy">Panduan Latihan Menulis</h2>
-        <div className="space-y-4 text-foreground">
+        <h2 className="text-xl sm:text-2xl font-bold mb-4 text-navy">Panduan Latihan Menulis</h2>
+        <div className="space-y-4 text-foreground text-sm sm:text-base">
           <p>
             Selamat datang di sesi latihan menulis! Ikuti langkah-langkah berikut agar latihan Anda maksimal:
           </p>
@@ -33,7 +33,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({ isOpen, onClose })
         </div>
         <button 
           onClick={onClose}
-          className="mt-6 w-full text-paper py-2 rounded-lg font-medium bg-navy hover:bg-navy/90 transition-colors"
+          className="mt-6 w-full text-paper py-3 rounded-lg font-medium bg-navy hover:bg-navy/90 transition-colors"
         >
           Mengerti, Mulai Latihan
         </button>
