@@ -31,17 +31,17 @@ Aplikasi web interaktif untuk mempelajari sistem penulisan Hiragana Jepang.
 ## Struktur Data & Level
 Data diatur dalam level kesulitan:
 
-| Level | Basic | Dakuten | Handakuten | Yoon |
-| :--- | :--- | :--- | :--- | :--- |
-| **1** | [0, 1] | - | - | - |
-| **2** | [0..3] | - | - | - |
-| **3** | All | - | - | - |
-| **4** | All | [0, 1] | - | - |
-| **5** | All | All | - | - |
-| **6** | All | All | All | - |
-| **7** | All | All | All | [0..3] |
-| **8** | All | All | All | [0..7] |
-| **9** | All | All | All | All |
+| Level | Basic    | Dakuten  | Handakuten | Yoon     |
+| ----- | -------- | -------- | ---------- | -------- |
+| 1     | `[0, 1]` | -        | -          | -        |
+| 2     | `[0..3]` | -        | -          | -        |
+| 3     | `[0..5]` | -        | -          | -        |
+| 4     | `[0..7]` | -        | -          | -        |
+| 5     | All      | -        | -          | -        |
+| 6     | All      | `[0, 1]` | -          | -        |
+| 7     | All      | `[0..3]` | `[0, 1]`   | -        |
+| 8     | All      | `[0..5]` | `[0..3]`   | `[0, 1]` |
+| 9     | All      | All      | All        | All      |
 
 ## Komponen Utama
 - `LevelSelector`: Komponen input untuk pemilihan level kuis.
