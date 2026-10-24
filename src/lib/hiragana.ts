@@ -28,25 +28,31 @@ export async function getCharactersByLevel(level: number): Promise<HiraganaChara
   const activeChars: HiraganaCharacter[] = [];
 
   const getBasicSet = (lv: number) => {
-    if (lv >= 3) return data.basic;
+    if (lv >= 5) return data.basic;
+    if (lv === 4) return data.basic.slice(0, 8);
+    if (lv === 3) return data.basic.slice(0, 6);
     if (lv === 2) return data.basic.slice(0, 4);
     return data.basic.slice(0, 2);
   };
 
   const getDakutenSet = (lv: number) => {
-    if (lv >= 5) return data.dakuten;
-    if (lv === 4) return data.dakuten.slice(0, 2);
+    if (lv >= 9) return data.dakuten;
+    if (lv === 8) return data.dakuten.slice(0, 6);
+    if (lv === 7) return data.dakuten.slice(0, 4);
+    if (lv === 6) return data.dakuten.slice(0, 2);
     return [];
   };
 
   const getHandakutenSet = (lv: number) => {
-    return lv >= 6 ? data.handakuten : [];
+    if (lv >= 9) return data.handakuten;
+    if (lv === 8) return data.handakuten.slice(0, 4);
+    if (lv === 7) return data.handakuten.slice(0, 2);
+    return [];
   };
 
   const getYoonSet = (lv: number) => {
     if (lv >= 9) return data.yoon;
-    if (lv === 8) return data.yoon.slice(0, 8);
-    if (lv === 7) return data.yoon.slice(0, 4);
+    if (lv === 8) return data.yoon.slice(0, 2);
     return [];
   };
 
