@@ -32,9 +32,9 @@ export const LevelInfoModal: React.FC<LevelInfoModalProps> = ({ isOpen, onClose 
               { level: 3, basic: '[0..5]', dakuten: '-', handakuten: '-', yoon: '-' },
               { level: 4, basic: '[0..7]', dakuten: '-', handakuten: '-', yoon: '-' },
               { level: 5, basic: 'All', dakuten: '-', handakuten: '-', yoon: '-' },
-              { level: 6, basic: 'All', dakuten: '[0, 1]', handakuten: '-', yoon: '-' },
-              { level: 7, basic: 'All', dakuten: '[0..3]', handakuten: '[0, 1]', yoon: '-' },
-              { level: 8, basic: 'All', dakuten: '[0..5]', handakuten: '[0..3]', yoon: '[0, 1]' },
+              { level: 6, basic: 'All', dakuten: '[0,1]', handakuten: '-', yoon: '-' },
+              { level: 7, basic: 'All', dakuten: 'All', handakuten: 'All', yoon: '[0..3]' },
+              { level: 8, basic: 'All', dakuten: 'All', handakuten: 'All', yoon: '[0..7]' },
               { level: 9, basic: 'All', dakuten: 'All', handakuten: 'All', yoon: 'All' },
             ].map((row) => (
               <tr key={row.level} className="border-b">

@@ -5,6 +5,7 @@ Aplikasi web interaktif untuk mempelajari sistem penulisan Hiragana Jepang.
 ## Fitur Utama
 
 ### 1. Pengenalan Hiragana (`/hiragana/pengenalan`)
+
 - **Fungsi:** Referensi visual untuk semua karakter hiragana.
 - **Detail:**
   - Karakter dikelompokkan ke dalam kategori: Basic, Dakuten, Handakuten, dan Yoon.
@@ -13,6 +14,7 @@ Aplikasi web interaktif untuk mempelajari sistem penulisan Hiragana Jepang.
   - Data diambil secara asinkron dari file `hiragana.json`.
 
 ### 2. Latihan Huruf (`/hiragana/latihan/huruf`)
+
 - **Fungsi:** Kuis interaktif untuk menguji pengenalan karakter.
 - **Mekanisme:**
   - Pengguna memilih level (1-9) melalui komponen `LevelSelector`.
@@ -21,29 +23,32 @@ Aplikasi web interaktif untuk mempelajari sistem penulisan Hiragana Jepang.
   - **Hasil:** Menampilkan kunci jawaban lengkap dalam format tabel (Karakter, Romaji, Stroke Count).
 
 ### 3. Latihan Sambung Cocok (`/hiragana/latihan/sambung-cocok`)
+
 - **Fungsi:** Latihan interaktif untuk mencocokkan karakter Hiragana dengan Romajinya.
 - **Detail:**
   - Pengguna memilih level, jumlah huruf per kuis, dan jumlah sesi.
   - Antarmuka menampilkan dua kolom: satu berisi karakter Hiragana, dan satu berisi Romaji yang harus dicocokkan.
-  - **Fitur:** Termasuk tutorial untuk panduan penggunaan dan fitur *preview* untuk melihat pasangan karakter yang benar selama latihan berlangsung.
+  - **Fitur:** Termasuk tutorial untuk panduan penggunaan dan fitur _preview_ untuk melihat pasangan karakter yang benar selama latihan berlangsung.
   - Logika kuis: Dikelola oleh `getSambungCocokQuiz` dari `lib/hiragana.ts`.
 
 ## Struktur Data & Level
+
 Data diatur dalam level kesulitan:
 
-| Level | Basic    | Dakuten  | Handakuten | Yoon     |
-| ----- | -------- | -------- | ---------- | -------- |
-| 1     | `[0, 1]` | -        | -          | -        |
-| 2     | `[0..3]` | -        | -          | -        |
-| 3     | `[0..5]` | -        | -          | -        |
-| 4     | `[0..7]` | -        | -          | -        |
-| 5     | All      | -        | -          | -        |
-| 6     | All      | `[0, 1]` | -          | -        |
-| 7     | All      | `[0..3]` | `[0, 1]`   | -        |
-| 8     | All      | `[0..5]` | `[0..3]`   | `[0, 1]` |
-| 9     | All      | All      | All        | All      |
+| Level | Basic    | Dakuten | Handakuten | Yoon     |
+| ----- | -------- | ------- | ---------- | -------- |
+| 1     | `[0, 1]` | -       | -          | -        |
+| 2     | `[0..3]` | -       | -          | -        |
+| 3     | `[0..5]` | -       | -          | -        |
+| 4     | `[0..7]` | -       | -          | -        |
+| 5     | All      | -       | -          | -        |
+| 6     | All      | `[0,1]` | -          | -        |
+| 7     | All      | All     | All        | `[0..3]` |
+| 8     | All      | All     | All        | `[0..7]` |
+| 9     | All      | All     | All        | All      |
 
 ## Komponen Utama
+
 - `LevelSelector`: Komponen input untuk pemilihan level kuis.
 - `HiraganaGroup`: Komponen UI untuk merender kelompok hiragana pada halaman pengenalan.
 - `QuizInteractiveInput`: (Potensial) Komponen untuk input jawaban kuis.
